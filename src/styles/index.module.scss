@@ -1,10 +1,72 @@
-.myname {
-    font-size: 66px;
-    font-weight: 900;
-    letter-spacing: -1.5px;
+@import 'toolkit';
+
+.homeHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 10%;
+
+    @include sm {
+        flex-direction: row;
+    }
 }
 
-.myskills {
-    font-size: 33px;
+.myTitle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myName {
+    font-size: 13vw;
+    line-height: .75;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    margin-bottom: 0;
+
+    @include sm {
+        font-size: 66px;
+    }
+}
+
+.mySkills {
+    font-size: 5.5vw;
     font-weight: 300;
+
+    @include sm {
+        font-size: 33px;
+    }
+}
+
+.myBox {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    min-height: 100px;
+    display: block;
+    flex: 1 0 50%;
+    box-shadow: 1px 1px 5px 0 rgba(26,26,67,.05),
+                39px 62.5px 125px -25px rgba(50,50,93,.5), 
+                23.4px 37.5px 75px -37.5px rgba(0,0,0,.6);
+    transform: translateX(50px)
+               translateY(0)
+               perspective(3190px)
+               rotateY(-29deg)
+               rotateX(4deg)
+               rotate(1deg);
+}
+
+.myForm {
+
+}
+
+.gotcha {
+    display: none;
 }

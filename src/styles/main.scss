@@ -4,34 +4,10 @@
 // reset
 @import 'normalize.css';
 
+// ui kit
+@import '~spectre.css/dist/spectre.min.css';
 
 // other
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Raleway', sans-serif;
-}
-
-h1 {
-    font-size: 55px;
-
-}
-.container {
-    background: blue;
-}
-
-.background {
-    display: flex;
-    flex-direction: column;
-    transform: skewY(-13deg);
-    transform-origin: 0 0;
-    background: #f5f5f5;
-
-    div {
-        flex: 1;
-        height: 20vh;
-        width: 100%;
-    }
-}
+@import 'toolkit';
+@import 'layout';
+@import 'ui';

@@ -1,0 +1,83 @@
+  ///////////////////////////////
+ // color tint/shade function //
+///////////////////////////////
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+
+  ///////////////////////
+ // breakpoints mixin //
+///////////////////////
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+// Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+}
+
+
+  ///////////////////////
+ // Variables //////////
+///////////////////////
+
+// Colors
+$primary-color:    #3d4676;
+$secondary-color:  #e85b6f;
+$tertiary-color:   shade($primary-color, 20%);
+$header-color:      $tertiary-color;
+$text-color:       #7F7B91;
+
+// Cubic-bezier easing variables.
+$ease:     cubic-bezier(0.4, 0.0, 0.2, 1);
+$ease-in:  cubic-bezier(0.0, 0.0, 0.2, 1);
+$ease-out: cubic-bezier(0.4, 0.0, 1, 1);

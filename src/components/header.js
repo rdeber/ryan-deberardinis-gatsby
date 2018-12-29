@@ -3,32 +3,85 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <header className="navbar">
+    <section className="navbar-section">
+      <nav>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
+          activeStyle={{
+            color: "red",
           }}
         >
-          {siteTitle}
+          Home
         </Link>
-      </h1>
-    </div>
-  </div>
+        <Link
+          to="/page-2/"
+          activeStyle={{
+            color: "red",
+          }}
+        >
+          Work
+        </Link>
+        <Link
+          to="/"
+          activeStyle={{
+            color: "red",
+          }}
+        >
+          About
+        </Link>
+        <Link
+          to="/"
+          activeStyle={{
+            color: "red",
+          }}
+        >
+          Contact
+        </Link>
+      </nav>
+    </section>
+
+    <section className="navbar-center">
+      <div className="initials">RD</div>
+    </section>
+
+    <section className="navbar-section">
+      <nav>
+        <Link
+          to="/"
+          activeStyle={{
+            color: "red",
+          }}
+        >
+          Home
+        </Link>
+        <Link
+          to="/page-2/"
+          activeStyle={{
+            color: "red",
+          }}
+        >
+          Work
+        </Link>
+        <Link
+          to="/"
+          activeStyle={{
+            color: "red",
+          }}
+        >
+          About
+        </Link>
+        <Link
+          to="/"
+          activeStyle={{
+            color: "red",
+          }}
+        >
+          Contact
+        </Link>
+      </nav>
+    </section>
+  </header>
 )
 
 Header.propTypes = {
