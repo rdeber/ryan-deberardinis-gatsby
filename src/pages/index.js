@@ -14,7 +14,7 @@ const IndexPage = () => (
         <h1 className={styles.myName}>RYAN DeBERARDINIS</h1>
         <h2 className={styles.mySkills}>Developer + Designer + Photographer</h2>
       </div>
-      <div className={[styles.myBox, "card"].join(' ')}>
+      <div className={[styles.myBox, ""].join(' ')}>
         <form className={styles.myForm} action="https://formspree.io/rdeber@gmail.com" method="POST">
           <div className="form-group">
             <label className="form-label" htmlFor="input-example-1">Name</label>
