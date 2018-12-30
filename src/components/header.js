@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import styles from '../styles/header.module.scss'
+import { FaGithub } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 const Header = ({ siteTitle }) => (
-  <header className="navbar custom">
+  <header className="navbar custom container">
     <section className="navbar-section">
       <nav className="navbar-nav">
         <Link to="/" exact={true} activeClassName="active">Home</Link>
         <Link to="/page-2/" exact={true} activeClassName="active">Work</Link>
-        <Link to="/about/" exact={true} activeClassName="active">About</Link>
-        <Link to="/contact/" exact={true} activeClassName="active">Contact</Link>
       </nav>
     </section>
 
@@ -20,8 +20,9 @@ const Header = ({ siteTitle }) => (
     </section>
 
     <section className="navbar-section">
-      <nav>
-test
+      <nav className="navbar-links">
+        <a href="/" className="tooltip tooltip-bottom" data-tooltip="See how this site was made"><FaGithub /></a>
+        <a href="/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
       </nav>
     </section>
   </header>

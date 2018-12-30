@@ -14,43 +14,47 @@ body {
 }
 
 .navbar.custom {
+    border-top: 3px solid $primary-color;
     position: relative;
     width: 100%;
 
     section {
-        align-items: flex-start;
     }
 
     nav {
-        align-items: flex-start;
-        background: $primary-color;
-        width: 100%;
     }
-}
 
-.navbar-nav {
     a {
-        color: rgba(255,255,255,.75);
-        font-size: .65rem;
+        //color: rgba(255,255,255,.75);
+        font-size: 1rem;
         font-weight: 900;
         text-transform: uppercase;
         font-family: $font-family2;
-        margin-left: 1.5rem;
         text-decoration: none;
+
+        & + a {
+            margin-left: 1.5rem;
+        }
         
         &:hover,
         &:focus,
         &:active,
         &.active {
-            color: rgba(255,255,255,.95);
+            //color: rgba(255,255,255,.95);
             text-decoration: none !important;                 
         }
 
         &:visited {
-            color: rgba(255,255,255,.75);
+            //color: rgba(255,255,255,.75);
         }
     }
+
+    .navbar-links {
+    
+        a {
+            color: $primary-color;
+        }
+    }
+    
+    
 }
-
-
-

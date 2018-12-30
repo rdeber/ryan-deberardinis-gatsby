@@ -140,6 +140,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .input__label-content--manami {
+    font-family: $font-family2;
 	padding: 0;
 	transform-origin: 0 0;
 	transition: transform 0.2s $ease-in, opacity 0.2s $ease-in;
