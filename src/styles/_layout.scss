@@ -6,14 +6,51 @@ body {
     background: $primary-color;
 }
 
-.wrap.container {
+.container.wrap {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-.navbar {
+.navbar.custom {
     position: relative;
+    width: 100%;
+
+    section {
+        align-items: flex-start;
+    }
+
+    nav {
+        align-items: flex-start;
+        background: $primary-color;
+        width: 100%;
+    }
 }
+
+.navbar-nav {
+    a {
+        color: rgba(255,255,255,.75);
+        font-size: .65rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: $font-family2;
+        margin-left: 1.5rem;
+        text-decoration: none;
+        
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: rgba(255,255,255,.95);
+            text-decoration: none !important;                 
+        }
+
+        &:visited {
+            color: rgba(255,255,255,.75);
+        }
+    }
+}
+
+
 

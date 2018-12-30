@@ -1,2 +1,12 @@
 @import 'toolkit';
 
+
+.initials {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -.2rem;
+    box-shadow: $shadow2;
+    background: $primary-color;
+    padding: .5rem;
+}

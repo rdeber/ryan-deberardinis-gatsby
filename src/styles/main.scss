@@ -1,13 +1,12 @@
-// fonts
+// import fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,700,900');
 
-// reset
-@import 'normalize.css';
-
-// ui kit
-@import '~spectre.css/dist/spectre.min.css';
-
-// other
+// import toolkit
 @import 'toolkit';
+
+// import all spectre css
+@import '~spectre.css/src/spectre.scss';
+
+// import other stuff
 @import 'layout';
 @import 'ui';

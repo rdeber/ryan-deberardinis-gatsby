@@ -37,28 +37,25 @@
     font-size: 5.5vw;
     font-weight: 300;
 
-    @include sm {
-        font-size: 33px;
+    @include md {
+        font-size: 27px;
     }
 }
 
 .myBox {
-    background: rgba(255,255,255,.25);
+    background: tint($primary-color, 97%);
     padding: 1rem;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
     width: 90%;
     display: block;
-    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),
-                0 18px 36px -18px rgba(0,0,0,.3);
+    box-shadow: $shadow3;
     transform: none;
 
     @include sm {
         flex: 1 0 50%;
-        box-shadow: 1px 1px 5px 0 rgba(26,26,67,.05),
-                    39px 62.5px 125px -25px rgba(50,50,93,.5), 
-                    23.4px 37.5px 75px -37.5px rgba(0,0,0,.6);
+        box-shadow: $shadow-3d-left;
         transform: translateX(50px)
         perspective(3190px)
         rotateY(-29deg)
@@ -67,10 +64,7 @@
     }
 }
 
-.myForm {
-
-}
-
 .gotcha {
     display: none;
 }
+

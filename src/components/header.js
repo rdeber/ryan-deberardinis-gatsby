@@ -2,83 +2,26 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import styles from '../styles/header.module.scss'
+
 const Header = ({ siteTitle }) => (
-  <header className="navbar">
+  <header className="navbar custom">
     <section className="navbar-section">
-      <nav>
-        <Link
-          to="/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          Home
-        </Link>
-        <Link
-          to="/page-2/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          Work
-        </Link>
-        <Link
-          to="/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          About
-        </Link>
-        <Link
-          to="/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          Contact
-        </Link>
+      <nav className="navbar-nav">
+        <Link to="/" exact={true} activeClassName="active">Home</Link>
+        <Link to="/page-2/" exact={true} activeClassName="active">Work</Link>
+        <Link to="/about/" exact={true} activeClassName="active">About</Link>
+        <Link to="/contact/" exact={true} activeClassName="active">Contact</Link>
       </nav>
     </section>
 
     <section className="navbar-center">
-      <div className="initials">RD</div>
+      <h5 className={styles.initials}>RD</h5>
     </section>
 
     <section className="navbar-section">
       <nav>
-        <Link
-          to="/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          Home
-        </Link>
-        <Link
-          to="/page-2/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          Work
-        </Link>
-        <Link
-          to="/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          About
-        </Link>
-        <Link
-          to="/"
-          activeStyle={{
-            color: "red",
-          }}
-        >
-          Contact
-        </Link>
+test
       </nav>
     </section>
   </header>
