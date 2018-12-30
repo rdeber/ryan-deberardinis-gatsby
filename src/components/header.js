@@ -10,8 +10,8 @@ const Header = ({ siteTitle }) => (
   <header className="navbar custom container">
     <section className="navbar-section">
       <nav className="navbar-nav">
-        <Link to="/" exact={true} activeClassName="active">Home</Link>
-        <Link to="/page-2/" exact={true} activeClassName="active">Work</Link>
+        <Link to="/" activeClassName="active">Home</Link>
+        <Link to="/page-2/" activeClassName="active">Work</Link>
       </nav>
     </section>
 
