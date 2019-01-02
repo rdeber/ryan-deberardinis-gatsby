@@ -1,7 +1,8 @@
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import styles from '../styles/header.module.scss'
 import { FaGithub } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
@@ -10,8 +11,8 @@ const Header = ({ siteTitle }) => (
   <header className="navbar custom container">
     <section className="navbar-section">
       <nav className="navbar-nav">
-        <Link to="/" activeClassName="active">Home</Link>
-        <Link to="/about/" activeClassName="active">About</Link>
+        <AniLink to="/" activeClassName="active" cover bg="#663399" duration={1}>Home</AniLink>
+        <AniLink to="/about/" activeClassName="active" paintDrip duration={1}>About</AniLink>
       </nav>
     </section>
 

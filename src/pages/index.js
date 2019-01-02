@@ -5,6 +5,7 @@ import Contact from '../components/contact'
 
 import styles from '../styles/index.module.scss'
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `react`]} />
