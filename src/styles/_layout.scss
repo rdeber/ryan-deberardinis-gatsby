@@ -5,8 +5,9 @@ body {
 
 .navbar.custom {
     border-top: 3px solid $primary-color;
-    position: relative;
+    position: fixed;
     width: 100%;
+    z-index: 9999;
 
     section {
     }

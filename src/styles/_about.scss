@@ -1,0 +1,19 @@
+@import 'toolkit';
+
+.pageCover {
+    min-height: 100vh;
+}
+
+.pageCoverImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+
+    .gatsby-image-wrapper {
+        min-height: 100vh;
+    }
+}
+
