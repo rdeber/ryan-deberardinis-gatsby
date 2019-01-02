@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+//import TransitionLink from 'gatsby-plugin-transition-link'
 
 import Background from './background'
 import Header from './header'
-import './layout.css'
 
 import '../styles/main.scss'
 
@@ -23,6 +23,7 @@ const Layout = ({ children }) => (
       <>
         <Background />
         <Header siteTitle={data.site.siteMetadata.title} />
+
         <div className="container wrap">
           {children}
         </div>

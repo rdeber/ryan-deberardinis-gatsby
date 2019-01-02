@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
     <section className="navbar-section">
       <nav className="navbar-nav">
         <Link to="/" activeClassName="active">Home</Link>
-        <Link to="/page-2/" activeClassName="active">Work</Link>
+        <Link to="/about/" activeClassName="active">About</Link>
       </nav>
     </section>
 
@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
 
     <section className="navbar-section">
       <nav className="navbar-links">
-        <a href="/" className="tooltip tooltip-bottom" data-tooltip="See how this site was made"><FaGithub /></a>
+        <a href="/" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
         <a href="/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
       </nav>
     </section>

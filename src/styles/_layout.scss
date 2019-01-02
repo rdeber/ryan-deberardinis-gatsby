@@ -1,16 +1,6 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-#___gatsby > div {
     background: $primary-color;
-}
-
-.container.wrap {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar.custom {
@@ -57,4 +47,9 @@ body {
     }
     
     
+}
+
+
+.img-container {
+    max-width: 500px;
 }
