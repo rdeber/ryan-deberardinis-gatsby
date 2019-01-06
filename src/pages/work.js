@@ -14,7 +14,7 @@ const WorkPage = (props) => (
       </section>
       <section className="section-1">
         <figure className="device-wrap">
-          <div className="device">
+          <div className="device device-3d-left">
             <div className="browser-ui">
               <div className="browser-ui-buttons">
                 <div className="browser-ui-button"></div>
@@ -39,7 +39,7 @@ const WorkPage = (props) => (
       
       <section className="section-2">
         <figure className="device-wrap">
-          <div className="device">
+          <div className="device device-3d-right">
             <div className="browser-ui">
               <div className="browser-ui-buttons">
                 <div className="browser-ui-button"></div>
@@ -63,7 +63,28 @@ const WorkPage = (props) => (
       </section>
       
       <section className="">
-      
+        <figure className="device-wrap">
+          <div className="device device-3d-left">
+            <div className="browser-ui">
+              <div className="browser-ui-buttons">
+                <div className="browser-ui-button"></div>
+                <div className="browser-ui-button"></div>
+                <div className="browser-ui-button"></div>  
+              </div>
+              <div className="browser-ui-search"></div>
+              <div className="browser-ui-close"></div>
+            </div>
+            <div className="device-img">
+              <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+            </div>
+          </div>
+        </figure>
+        <article>
+          <h2>Solar Energy International</h2>
+          <h3>Frontend design + Development</h3>
+          <h4>HTML, CSS, JS, Moodle</h4>
+          <p></p>
+        </article>
       </section>
       <section className="">
       
@@ -88,6 +109,13 @@ export const pageQuery = graphql`
       }
     }
     imageTwo: file(relativePath: { eq: "work/work-learningspaces-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageThree: file(relativePath: { eq: "work/work-solarenergy-1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
