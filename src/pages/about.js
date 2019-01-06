@@ -17,6 +17,7 @@ const SecondPage = (props) => (
         <h1 className="myName">Hello. I'm Ryan,</h1>
         <h2 className="mySkills">a creative professional from NYC</h2>
         <p>My work focuses on the intersection between design and development. I have a relentless passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City.</p>
+        <p>I'm currently working as lead front end developer for Remote-Learner in NYC</p>
       </div>
     </section>
 

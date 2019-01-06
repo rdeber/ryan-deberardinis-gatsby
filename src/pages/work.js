@@ -31,9 +31,11 @@ const WorkPage = (props) => (
         </figure>
         <article>
           <h2>Indeed Academy</h2>
-          <h3>Frontend design + Development</h3>
-          <h4>HTML, CSS/LESS, JS, PHP, Moodle</h4>
-          <p></p>
+          <h3>Frontend Development + UI Design</h3>
+          <h4>Created for Remote-Learner</h4>
+          <p>Working with the creative team at Remote-Learner, I lead the front-end development and design of this complex project. The site is built on the Moodle LMS and utilizes the latest technologies for responsive web development.</p>
+          <a href="" className="btn btn-default">Learn More</a>
+          <a href="" className="btn btn-default">View Site</a>
         </article>
       </section>
       
@@ -56,9 +58,9 @@ const WorkPage = (props) => (
         </figure>
         <article>
           <h2>Learning Spaces</h2>
-          <h3>Frontend design + Development</h3>
+          <h3>Frontend Development + UI Design</h3>
           <h4>HTML, CSS/LESS, JS, Moodle</h4>
-          <p></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Vestibulum finibus lacus mauris, eget cursus lectus gravida vel. Aenean hendrerit vulputate sem, eu semper mauris dignissim id. Fusce mollis et odio imperdiet ornare. Sed aliquam id eros vulputate accumsan. Maecenas et semper odio. Aliquam luctus finibus viverra. Quisque id interdum odio. Nullam pretium odio ante, et posuere turpis molestie eget. Donec non molestie nulla.</p>
         </article>
       </section>
       
@@ -81,18 +83,20 @@ const WorkPage = (props) => (
         </figure>
         <article>
           <h2>Solar Energy International</h2>
-          <h3>Frontend design + Development</h3>
+          <h3>Frontend Development + Design</h3>
           <h4>HTML, CSS, JS, Moodle</h4>
-          <p></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Vestibulum finibus lacus mauris, eget cursus lectus gravida vel. Aenean hendrerit vulputate sem, eu semper mauris dignissim id. Fusce mollis et odio imperdiet ornare. Sed aliquam id eros vulputate accumsan. Maecenas et semper odio. Aliquam luctus finibus viverra. Quisque id interdum odio. Nullam pretium odio ante, et posuere turpis molestie eget. Donec non molestie nulla.</p>
         </article>
       </section>
+
       <section className="">
       
       </section>
+
       <section className="">
       
       </section>
-    hi
+
     </div>
   </Layout>
 )
