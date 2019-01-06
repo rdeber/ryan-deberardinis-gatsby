@@ -3,6 +3,55 @@ h1,h2,h3,h4,h5,h6 {
     color: $header-color;
 }
 
+
+// Style scrollbars for webkit browsers.
+::-webkit-scrollbar{
+	width: 7px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #ccc;
+}
+
+
+
+.myTitle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myName {
+    font-size: 13vw;
+    line-height: .75;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    margin-bottom: 0;
+
+    @include sm {
+        font-size: 66px;
+    }
+}
+
+.mySkills {
+    font-size: 5.5vw;
+    font-weight: 300;
+
+    @include md {
+        font-size: 27px;
+    }
+}
+
 .box {
     background: #f5f5f5;
     padding: 1rem;
@@ -167,4 +216,6 @@ h1,h2,h3,h4,h5,h6 {
         min-height: 150px;  
     }
 }
+
+////////
 

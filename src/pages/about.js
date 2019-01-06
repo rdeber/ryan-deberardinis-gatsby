@@ -14,8 +14,9 @@ const SecondPage = (props) => (
         <Img fluid={props.data.imageOne.childImageSharp.fluid} />
       </div>
       <div className="pageCoverTitle">
-        <h1>Hi from the second page</h1>
-        <p>Welcome to page 2</p>
+        <h1 className="myName">Hello. I'm Ryan,</h1>
+        <h2 className="mySkills">a creative professional from NYC</h2>
+        <p>My work focuses on the intersection between design and development. I have a relentless passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City.</p>
       </div>
     </section>
 
@@ -28,8 +29,8 @@ const SecondPage = (props) => (
               <Img fluid={props.data.imageOne.childImageSharp.fluid} />
             </div>
             <div className="card-header">
-              <div className="card-title h5">Header</div>
-              <div className="card-subtitle text-gray">subheader</div>
+              <div className="card-title h5">Hello. I'm Ryan DeBerardinis.</div>
+              <div className="card-subtitle text-gray">a designer, developer and photographer working in New York City</div>
             </div>
             <div className="card-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis convallis nunc bibendum fermentum. Praesent gravida eros nisl, eget egestas tortor facilisis sed. Fusce at velit a nibh pretium dignissim imperdiet vitae turpis. Etiam egestas nulla at arcu scelerisque, quis maximus ex auctor. Proin pretium augue maximus, blandit ex nec, maximus neque. Pellentesque elementum nulla feugiat congue aliquet. Fusce lacus sem, fringilla in ultrices sit amet, efficitur sit amet massa. Phasellus bibendum maximus dui sodales pharetra. Nunc ultrices auctor mauris lobortis auctor. Mauris neque diam, luctus et scelerisque et, dapibus et neque. Mauris in finibus neque. Mauris quis leo sit amet nibh euismod congue ut id est. Nulla sit amet lacus quis risus sollicitudin facilisis quis ac nisi. Fusce in tellus scelerisque, aliquam odio.</p>

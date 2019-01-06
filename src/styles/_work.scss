@@ -1,0 +1,139 @@
+@import 'toolkit';
+
+.work section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 5rem 1rem;
+
+    h2 {
+        color: rgba(255,255,255,.95);
+        font-weight: bold;
+    }
+
+    h3 {
+        color: rgba(255,255,255,.8);
+        font-weight: normal;
+    }
+
+    h4 {
+        color: rgba(255,255,255,.7);
+        font-weight: normal;
+        font-size: 1rem
+    }
+
+    // Indeed Academy
+    &:nth-of-type(2) {
+        background: #2164f3;
+    }
+    // Learning Spaces
+    &:nth-of-type(3) {
+        background: #2d3335;
+
+        figure {
+            order: 2;
+        }
+    }
+    &:nth-of-type(4) {
+        background: #009c4c;
+    }
+    &:nth-of-type(5) {
+        background: #005580;
+    }
+    &:nth-of-type(6) {
+        background: #2d3335;
+    }
+}
+
+
+
+
+.device-wrap {
+    perspective: 1500px;
+}
+.device {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 480px;
+    height: 360px;
+    border-radius: 13px;
+    background: #fff;
+    padding: .25rem 1rem;
+    box-shadow: inset 0 4px 7px 1px #fff,
+                inset 0 -5px 20px rgba(173,186,204,.25),
+                0 2px 6px rgba(0,21,64,.14), 
+                0 10px 20px rgba(0,21,64,.05),
+                $shadow2;
+    transform: $box-3d-left;
+
+    .gatsby-image-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.device-img {
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+    perspective: 1500px;
+}
+
+.browser-ui {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ddd;
+    width: 100%;
+    min-height: 30px;
+    border-radius: 4px 4px 0 0;
+    padding: 0 .25rem;
+}
+
+.browser-ui-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.browser-ui-button {
+    background: #777;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.browser-ui-search {
+    background: #bbb;
+    width: 55%;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.browser-ui-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+        height: 12px;
+        width: 3px;
+        background-color: #aaa;
+        border-radius: 3px
+    }
+
+    &:before {
+        transform: rotate(45deg);
+      }
+    &:after {
+        transform: rotate(-45deg);
+      }
+}

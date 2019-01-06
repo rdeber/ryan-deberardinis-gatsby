@@ -2,6 +2,9 @@
 
 .pageCover {
     min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .pageCoverImg {
@@ -17,3 +20,6 @@
     }
 }
 
+.pageCoverTitle {
+    z-index: 1;
+}
