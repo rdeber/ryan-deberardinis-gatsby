@@ -13,7 +13,6 @@
 1.  **Install Gatsby**
 
     ```sh
-    # install Gatsby CLI
     npm install --global gatsby-cli
     ```
 
@@ -27,7 +26,7 @@
 
 3.  **Start Gatsby**
 
-    From inside the site’s directory:
+    From inside the site’s directory run:
 
     ```sh
     gatsby develop
