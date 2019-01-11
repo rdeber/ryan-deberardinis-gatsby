@@ -3,54 +3,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.navbar.custom {
-    border-top: 3px solid $primary-color;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-
-    section {
-    }
-
-    nav {
-    }
-
-    a {
-        //color: rgba(255,255,255,.75);
-        font-size: 1rem;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-family: $font-family2;
-        text-decoration: none;
-
-        & + a {
-            margin-left: 1.5rem;
-        }
-        
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            //color: rgba(255,255,255,.95);
-            text-decoration: none !important;                 
-        }
-
-        &:visited {
-            //color: rgba(255,255,255,.75);
-        }
-    }
-
-    .navbar-links {
-    
-        a {
-            color: $primary-color;
-        }
-    }
-    
-    
-}
-
-
 .img-container {
     max-width: 500px;
 }

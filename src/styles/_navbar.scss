@@ -1,0 +1,55 @@
+@import 'toolkit';
+
+.navbar {
+    border-top: 3px solid $primary-color;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background: transparent;
+    transition: .25s $ease-in;
+
+    a {
+        font-size: 1rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: $font-family2;
+        text-decoration: none;
+
+        & + a {
+            margin-left: 1.5rem;
+        }
+        
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            //color: rgba(255,255,255,.95);
+            text-decoration: none !important;                 
+        }
+
+        &:visited {
+            //color: rgba(255,255,255,.75);
+        }
+    }
+
+    .navbar-links {
+    
+        a {
+            //color: $primary-color;
+        }
+    }
+}
+
+// Styles for solid navbar when scrolled
+.navbar-solid {
+    background: shade($primary-color, 20%);
+
+    a {
+        color: rgba(255,255,255,.75);
+
+        &:hover,
+        &:focus {
+            color: rgba(255,255,255,.95);
+        }
+    }
+}

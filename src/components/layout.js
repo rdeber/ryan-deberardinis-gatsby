@@ -2,11 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 //import TransitionLink from 'gatsby-plugin-transition-link'
-
 import Background from './background'
 import Header from './header'
-import Box from './box'
-
+import Navbar from './navbar'
 import '../styles/main.scss'
 
 const Layout = ({ children }) => (
@@ -22,9 +20,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Box />
         <Background />
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Navbar />
 
         <div className="container wrap">
           {children}
