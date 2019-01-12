@@ -14,16 +14,13 @@
     }
 
     a {
-        font-size: .8rem;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-family: $font-family2;
-        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: rgba(255,255,255,.75);
-
-        & + a {
-            margin-left: 1.5rem;
-        }
+        font-family: $font-family2;
+        transition: color .25s $ease-in;
         
         &:hover,
         &:focus,
@@ -31,6 +28,9 @@
         &.active {
             color: rgba(255,255,255,.95);
             text-decoration: none !important;                 
+        }
+        @include md {
+            
         }
     }
     @include md {
@@ -40,6 +40,76 @@
             &:focus {
                 color: shade($primary-color, 20%);
             }
+        }
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    @include md {
+        justify-content: flex-start;
+    }
+
+    a {
+        font-size: 1.25rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        @include md {
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    // Hide nav text on mobile.
+    span.text-wrap {
+        display: none;
+
+        // Show nav text on desktop.
+        @include md {
+            display: block;
+        }
+    }
+
+    // Hide icons on desktop.
+    @include md {
+        svg {
+            display: none;
+        }
+    }
+}
+
+.navbar-initials {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -.1rem;
+    box-shadow: $shadow2;
+    background: tint($primary-color, 15%);
+    padding: .1rem .3rem;
+    border-radius: 0 0 5px 5px;
+    margin: 0 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+    @include md {
+        justify-content: flex-end;
+    }
+
+    a {
+        font-size: 1.25rem;
+
+        @include md {
+            margin-left: 1rem;
         }
     }
 }

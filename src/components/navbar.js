@@ -2,6 +2,9 @@
 import React from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import styles from '../styles/header.module.scss'
+import { FaUserNinja } from 'react-icons/fa'
+import { FaCode } from 'react-icons/fa'
+import { FaCamera } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { FaCodepen } from 'react-icons/fa'
@@ -30,21 +33,36 @@ class Navbar extends React.Component {
       <header id="navbar" className="navbar container">
         <div className="navbar-section">
           <nav className="navbar-nav">
-            <AniLink to="/about/" activeClassName="active" fade bg="#663399" duration={1}>About</AniLink>
-            <AniLink to="/work/" activeClassName="active" fade bg="#663399" duration={1}>Work</AniLink>
-            <AniLink to="/photos/" activeClassName="active" fade bg="#663399" duration={1}>Photos</AniLink>
+            <span className="tooltip tooltip-right" data-tooltip="Who am I?">
+              <AniLink to="/about/" activeClassName="active" fade bg="#663399" duration={1}>
+                <FaUserNinja />
+                <span className="text-wrap">About</span>
+              </AniLink>
+            </span>
+            <span className="tooltip tooltip-right" data-tooltip="My Work">
+              <AniLink to="/work/" activeClassName="active" fade bg="#663399" duration={1}>
+                <FaCode />
+                <span className="text-wrap">Work</span>
+              </AniLink>
+            </span>
+            <span className="tooltip tooltip-right" data-tooltip="My Photography">
+              <AniLink to="/about/" activeClassName="active" fade bg="#663399" duration={1}>
+                <FaCamera />
+                <span className="text-wrap">Photos</span>
+              </AniLink>
+            </span>
           </nav>
         </div>
 
         <div className="navbar-center">
-          <h5 className={styles.initials}><AniLink to="/" activeClassName="active" fade bg="#663399" duration={1}>RD</AniLink></h5>
+          <AniLink to="/" className="navbar-initials" activeClassName="active" fade bg="#663399" duration={1}>RD</AniLink>
         </div>
 
         <div className="navbar-section">
           <nav className="navbar-links">
-            <a href="/" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
-            <a href="/" className="tooltip tooltip-bottom" data-tooltip="Check out my Codepens"><FaCodepen /></a>
-            <a href="/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
+            <a href="/" className="tooltip tooltip-left" data-tooltip="View Source"><FaGithub /></a>
+            <a href="/" className="tooltip tooltip-left" data-tooltip="Check out my Codepens"><FaCodepen /></a>
+            <a href="/" className="tooltip tooltip-left" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
           </nav>
         </div>
       </header>
