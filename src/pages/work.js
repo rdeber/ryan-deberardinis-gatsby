@@ -9,8 +9,9 @@ const WorkPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `react`]} />
     <div className="work">
-      <section className="pageCover">
-      
+      <section className="banner">
+        <h1>Creative Work</h1>
+        <h2>Development + Design</h2>
       </section>
       <section className="section-1">
         <figure className="device-wrap">

@@ -24,6 +24,8 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
     "react-pose": "^4.0.4",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1",
     "spectre.css": "^0.5.8"
   },
   "keywords": [

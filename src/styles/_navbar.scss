@@ -1,19 +1,25 @@
 @import 'toolkit';
 
 .navbar {
-    border-top: 3px solid $primary-color;
     position: fixed;
+    bottom: 0;
     width: 100%;
     z-index: 9999;
-    background: transparent;
+    background: shade($primary-color, 20%);
     transition: .25s $ease-in;
+    @include md {
+        bottom: auto;
+        border-top: 3px solid $primary-color;
+        background: transparent;
+    }
 
     a {
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 900;
         text-transform: uppercase;
         font-family: $font-family2;
         text-decoration: none;
+        color: rgba(255,255,255,.75);
 
         & + a {
             margin-left: 1.5rem;
@@ -23,19 +29,17 @@
         &:focus,
         &:active,
         &.active {
-            //color: rgba(255,255,255,.95);
+            color: rgba(255,255,255,.95);
             text-decoration: none !important;                 
         }
-
-        &:visited {
-            //color: rgba(255,255,255,.75);
-        }
     }
-
-    .navbar-links {
-    
+    @include md {
         a {
-            //color: $primary-color;
+            color: $primary-color;
+            &:hover,
+            &:focus {
+                color: shade($primary-color, 20%);
+            }
         }
     }
 }

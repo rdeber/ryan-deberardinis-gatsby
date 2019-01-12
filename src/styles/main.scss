@@ -7,9 +7,14 @@
 // import all spectre css
 @import '~spectre.css/src/spectre.scss';
 
+// import slick slider
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 // import other stuff
 @import 'layout';
 @import 'navbar';
 @import 'ui';
 @import 'about';
 @import 'work';
+@import 'photos';

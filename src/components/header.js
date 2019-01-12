@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const Header = ({ siteTitle }) => (
-  <header className="navbar custom container">
+  <header>
 
   </header>
 )

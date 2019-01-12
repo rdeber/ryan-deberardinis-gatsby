@@ -30,7 +30,6 @@ class Navbar extends React.Component {
       <header id="navbar" className="navbar container">
         <div className="navbar-section">
           <nav className="navbar-nav">
-            <AniLink to="/" activeClassName="active" fade bg="#663399" duration={1}>Home</AniLink>
             <AniLink to="/about/" activeClassName="active" fade bg="#663399" duration={1}>About</AniLink>
             <AniLink to="/work/" activeClassName="active" fade bg="#663399" duration={1}>Work</AniLink>
             <AniLink to="/photos/" activeClassName="active" fade bg="#663399" duration={1}>Photos</AniLink>
@@ -38,7 +37,7 @@ class Navbar extends React.Component {
         </div>
 
         <div className="navbar-center">
-          <h5 className={styles.initials}>RD</h5>
+          <h5 className={styles.initials}><AniLink to="/" activeClassName="active" fade bg="#663399" duration={1}>RD</AniLink></h5>
         </div>
 
         <div className="navbar-section">
