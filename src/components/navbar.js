@@ -4,6 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import styles from '../styles/header.module.scss'
 import { FaGithub } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
+import { FaCodepen } from 'react-icons/fa'
 
 
 class Navbar extends React.Component {
@@ -32,6 +33,7 @@ class Navbar extends React.Component {
             <AniLink to="/" activeClassName="active" fade bg="#663399" duration={1}>Home</AniLink>
             <AniLink to="/about/" activeClassName="active" fade bg="#663399" duration={1}>About</AniLink>
             <AniLink to="/work/" activeClassName="active" fade bg="#663399" duration={1}>Work</AniLink>
+            <AniLink to="/photos/" activeClassName="active" fade bg="#663399" duration={1}>Photos</AniLink>
           </nav>
         </div>
 
@@ -42,6 +44,7 @@ class Navbar extends React.Component {
         <div className="navbar-section">
           <nav className="navbar-links">
             <a href="/" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
+            <a href="/" className="tooltip tooltip-bottom" data-tooltip="Check out my Codepens"><FaCodepen /></a>
             <a href="/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
           </nav>
         </div>

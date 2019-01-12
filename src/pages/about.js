@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const SecondPage = (props) => (
+
+const AboutPage = (props) => (
   <Layout>
     <SEO title="Page two" />
 
@@ -81,15 +81,14 @@ const SecondPage = (props) => (
       </div>
     </div>
 
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
-export default SecondPage
+export default AboutPage
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "about-bg.jpg" }) {
+    imageOne: file(relativePath: { eq: "photos/about-bg.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
