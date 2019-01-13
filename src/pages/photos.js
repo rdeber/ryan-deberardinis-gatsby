@@ -33,6 +33,24 @@ const PhotosPage = (props) => (
           <div className="logo">
             <Img fluid={props.data.logo6.childImageSharp.fluid} />
           </div>
+          <div className="logo">
+            <Img fluid={props.data.logo7.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.logo8.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.logo9.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.logo10.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.logo11.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.logo12.childImageSharp.fluid} />
+          </div>
         </div>
       </section>
 
@@ -325,6 +343,48 @@ export const pageQuery = graphql`
       }
     }
     logo6: file(relativePath: { eq: "logos/denver-philharmonic-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo7: file(relativePath: { eq: "logos/logo1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo8: file(relativePath: { eq: "logos/logo2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo9: file(relativePath: { eq: "logos/logo3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo10: file(relativePath: { eq: "logos/logo4.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo11: file(relativePath: { eq: "logos/logo5.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo12: file(relativePath: { eq: "logos/logo6.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
