@@ -1,15 +1,10 @@
 @import 'toolkit';
 
-.logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.photo-grid {
+    max-width: 600px;
+    margin: auto;
 }
 
-.logo {
-    flex: 1;
-    width: 100px;
-    min-width: 100px;
-    max-width: 100px;
+.photo {
+    margin-bottom: 2rem;
 }

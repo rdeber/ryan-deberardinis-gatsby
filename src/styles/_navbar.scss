@@ -20,14 +20,16 @@
         justify-content: center;
         color: rgba(255,255,255,.75);
         font-family: $font-family2;
-        transition: color .25s $ease-in;
+        transition: all .25s $ease-in;
         
         &:hover,
-        &:focus,
-        &:active,
-        &.active {
+        &:focus {
             color: rgba(255,255,255,.95);
             text-decoration: none !important;                 
+        }
+        
+        &.active {
+            transform: scale(1.2);        
         }
         @include md {
             
@@ -83,7 +85,7 @@
     }
 }
 
-.navbar-initials {
+.navbar-center .navbar-initials {
     color: #fff;
     font-size: 2rem;
     font-weight: 900;
