@@ -32,23 +32,23 @@ class Navbar extends React.Component {
       <header id="navbar" className="navbar container">
         <div className="navbar-section">
           <nav className="navbar-nav">
-            <span className="tooltip tooltip-right" data-tooltip="Who am I?">
+            <span className="tooltip tooltip-bottom" data-tooltip="Who am I?">
               <AniLink to="/about/" activeClassName="active" paintDrip bg="#663399" duration={1}>
                 <FaUserNinja />
                 <span className="text-wrap">About</span>
               </AniLink>
             </span>
-            <span className="tooltip tooltip-right" data-tooltip="My Work">
+            <span className="tooltip tooltip-bottom" data-tooltip="My Work">
               <AniLink to="/work/" activeClassName="active" fade bg="#663399" duration={1}>
                 <FaCode />
                 <span className="text-wrap">Work</span>
               </AniLink>
             </span>
-            <span className="tooltip tooltip-right" data-tooltip="My Photography">
-              <Link to="/photos/" activeClassName="active">
+            <span className="tooltip tooltip-bottom" data-tooltip="My Photography">
+              <AniLink to="/photos/" activeClassName="active">
                 <FaCamera />
                 <span className="text-wrap">Photos</span>
-              </Link>
+              </AniLink>
             </span>
           </nav>
         </div>
@@ -59,9 +59,9 @@ class Navbar extends React.Component {
 
         <div className="navbar-section">
           <nav className="navbar-links">
-            <a href="/" className="tooltip tooltip-left" data-tooltip="View Source"><FaGithub /></a>
-            <a href="/" className="tooltip tooltip-left" data-tooltip="Check out my Codepens"><FaCodepen /></a>
-            <a href="/" className="tooltip tooltip-left" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
+            <a href="/" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
+            <a href="/" className="tooltip tooltip-bottom" data-tooltip="Check out my Codepens"><FaCodepen /></a>
+            <a href="/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
           </nav>
         </div>
       </header>
