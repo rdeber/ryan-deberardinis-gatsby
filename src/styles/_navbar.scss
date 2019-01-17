@@ -2,15 +2,17 @@
 
 .navbar {
     position: fixed;
-    bottom: 0;
     width: 100%;
     z-index: 9999;
-    background: shade($primary-color, 20%);
+    border-top: 3px solid tint($primary-color, 20%);
+    background: rgba(255,255,255,.25);
     transition: .25s $ease-in;
+
     @include md {
-        bottom: auto;
         border-top: 3px solid $primary-color;
         background: transparent;
+        box-shadow: none;
+        padding: 0 1rem;
     }
 
     a {
@@ -18,30 +20,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: rgba(255,255,255,.75);
+        color: $primary-color;
         font-family: $font-family2;
         transition: all .25s $ease-in;
         
         &:hover,
         &:focus {
-            color: rgba(255,255,255,.95);
+            color: shade($primary-color, 20%);
             text-decoration: none !important;                 
         }
         
         &.active {
             transform: scale(1.2);        
-        }
-        @include md {
-            
-        }
-    }
-    @include md {
-        a {
-            color: $primary-color;
-            &:hover,
-            &:focus {
-                color: shade($primary-color, 20%);
-            }
         }
     }
 }
@@ -87,14 +77,21 @@
 
 .navbar-center .navbar-initials {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 900;
     letter-spacing: -.1rem;
     box-shadow: $shadow2;
-    background: tint($primary-color, 15%);
+    background: tint($primary-color, 20%);
     padding: .1rem .3rem;
     border-radius: 0 0 5px 5px;
-    margin: 0 1rem;
+    margin: -3px 1rem 0;
+    position: relative;
+    top: 3px;
+
+    @include md {
+        background: $primary-color;
+        font-size: 2rem;
+    }
 }
 
 .navbar-links {
@@ -103,14 +100,14 @@
     justify-content: space-evenly;
     width: 100%;
 
-    @include md {
-        justify-content: flex-end;
-    }
-
     a {
         font-size: 1.25rem;
+    }
 
-        @include md {
+    @include md {
+        justify-content: flex-end;
+
+        a {
             margin-left: 1rem;
         }
     }
@@ -119,6 +116,7 @@
 // Styles for solid navbar when scrolled
 .navbar-solid {
     background: shade($primary-color, 20%);
+    box-shadow: $shadow1;
 
     a {
         color: rgba(255,255,255,.75);
@@ -127,5 +125,14 @@
         &:focus {
             color: rgba(255,255,255,.95);
         }
+    }
+
+    &.navbar {
+        border-top-color: tint($primary-color, 20%);
+    }
+
+    .navbar-initials {
+        font-size: 1.25rem;
+        background: tint($primary-color, 20%);
     }
 }

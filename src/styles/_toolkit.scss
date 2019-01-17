@@ -101,8 +101,8 @@ $ease-in:  cubic-bezier(0.0, 0.0, 0.2, 1);
 $ease-out: cubic-bezier(0.4, 0.0, 1, 1);
 
 // Shadows
-$shadow1: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
-$shadow2: -2px 8px 22px 0 rgba(0, 0, 0, 0.15);
+$shadow1: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+$shadow2: 0 8px 22px 0 rgba(0, 0, 0, 0.15);
 $shadow3: 0 5px 15px rgba(0,0,0,.1),
           0 15px 35px rgba(0,0,0,.1),
           0 50px 100px rgba(50,50,93,.1);

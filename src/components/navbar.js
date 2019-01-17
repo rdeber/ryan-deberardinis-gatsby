@@ -20,7 +20,7 @@ class Navbar extends React.Component {
   }
 
   toggleBodyClass = () => {
-    if (window.scrollY > 25) {
+    if (window.scrollY > 5) {
       document.getElementById("navbar").classList.add("navbar-solid");
     } else {
       document.getElementById("navbar").classList.remove("navbar-solid");
@@ -29,7 +29,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <header id="navbar" className="navbar container">
+      <header id="navbar" className="navbar">
         <div className="navbar-section">
           <nav className="navbar-nav">
             <span className="tooltip tooltip-bottom" data-tooltip="Who am I?">

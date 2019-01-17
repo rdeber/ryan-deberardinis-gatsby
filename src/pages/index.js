@@ -13,7 +13,7 @@ const IndexPage = () => (
         <h1 className={styles.myName}>RYAN DeBERARDINIS</h1>
         <h2 className={styles.mySkills}>Developer + Designer + Photographer</h2>
       </div>
-      <div className="box-3d-right">
+      <div className="box-3d-right contact-form">
         <div className="myForm">
           <Contact />
         </div>

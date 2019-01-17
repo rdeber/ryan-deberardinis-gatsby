@@ -31,13 +31,13 @@ h4 {
 .banner {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin: 4rem 0 2rem;
+    margin: 1rem 0 3rem;
     text-align: center;
+    min-height: 80vh;
 
     @include md {
-        margin: 7rem 0 5rem;
+        margin: 4rem 0 0;
     }
 
     h1 {
@@ -155,9 +155,11 @@ h4 {
  // 3D Box Styles //////
 ///////////////////////
 .box-3d-right {
-    box-shadow: $shadow-3d-right;
+    box-shadow: $shadow3;
+    border-radius: 9px;
 
     @include md {
+        box-shadow: $shadow-3d-right;
         transform: $transform-3d-right-box;
     }
 }
