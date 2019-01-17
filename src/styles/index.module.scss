@@ -11,6 +11,10 @@
         flex-direction: row;
         margin: 0 10%;
     }
+
+    > * {
+        flex: 1 0 50%;
+    }
 }
 
 .myTitle {
@@ -42,25 +46,4 @@
     }
 }
 
-.myBox {
-    background: tint($primary-color, 97%);
-    padding: 1rem;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    width: 90%;
-    display: block;
-    box-shadow: $shadow3;
-    transform: none;
-
-    @include sm {
-        flex: 1 0 50%;
-        box-shadow: $shadow-3d-right;
-        transform: translateX(50px)
-                   perspective(3190px)
-                   rotateY(-29deg)
-                   rotateX(4deg)
-                   rotate(1deg);
-    }
-}
 

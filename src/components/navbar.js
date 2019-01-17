@@ -33,19 +33,19 @@ class Navbar extends React.Component {
         <div className="navbar-section">
           <nav className="navbar-nav">
             <span className="tooltip tooltip-bottom" data-tooltip="Who am I?">
-              <AniLink to="/about/" activeClassName="active" paintDrip bg="#663399" duration={1}>
+              <AniLink to="/about/" activeClassName="active" fade>
                 <FaUserNinja />
                 <span className="text-wrap">About</span>
               </AniLink>
             </span>
             <span className="tooltip tooltip-bottom" data-tooltip="My Work">
-              <AniLink to="/work/" activeClassName="active" fade bg="#663399" duration={1}>
+              <AniLink to="/work/" activeClassName="active" fade>
                 <FaCode />
                 <span className="text-wrap">Work</span>
               </AniLink>
             </span>
             <span className="tooltip tooltip-bottom" data-tooltip="My Photography">
-              <AniLink to="/photos/" activeClassName="active">
+              <AniLink to="/photos/" activeClassName="active" fade>
                 <FaCamera />
                 <span className="text-wrap">Photos</span>
               </AniLink>
@@ -54,7 +54,7 @@ class Navbar extends React.Component {
         </div>
 
         <div className="navbar-center">
-          <AniLink to="/" className="navbar-initials" activeClassName="active" fade bg="#663399" duration={1}>RD</AniLink>
+          <AniLink to="/" className="navbar-initials" activeClassName="active" fade>RD</AniLink>
         </div>
 
         <div className="navbar-section">

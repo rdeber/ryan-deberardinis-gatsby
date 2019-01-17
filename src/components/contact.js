@@ -8,28 +8,28 @@ const Contact = () => (
 
       <div className="form-group">
         <span className="input input--manami">
-          <input className={`input__field input__field--manami`} type="text" id="name" />
+          <input className={`input__field input__field--manami`} type="text" id="name" required />
           <label className={`input__label input__label--manami`} htmlFor="name">
             <span className={`input__label-content input__label-content--manami`}>Name</span>
           </label>
         </span>
         <span className="input input--manami">
-          <input className={`input__field input__field--manami`} type="text" id="email" />
+          <input className={`input__field input__field--manami`} type="text" id="email" required />
           <label className={`input__label input__label--manami`} htmlFor="email">
             <span className={`input__label-content input__label-content--manami`}>Email</span>
           </label>
         </span>
         <span className="input input--manami">
-          <input className={`input__field input__field--manami`} type="text" id="color" />
-          <label className={`input__label input__label--manami`} htmlFor="color">
-            <span className={`input__label-content input__label-content--manami`}>Favorite Color</span>
+          <input className={`input__field input__field--manami`} type="text" id="phone" required />
+          <label className={`input__label input__label--manami`} htmlFor="phone">
+            <span className={`input__label-content input__label-content--manami`}>Phone</span>
           </label>
         </span>
       </div>
 
       <div className="form-group">
         <span className="input input--manami">
-          <textarea className={`input__field input__field--manami`} id="message" rows="3"></textarea>
+          <textarea className={`input__field input__field--manami`} id="message" rows="3" required></textarea>
           <label className={`input__label input__label--manami`} htmlFor="message">
             <span className={`input__label-content input__label-content--manami`}>What's Up?</span>
           </label>

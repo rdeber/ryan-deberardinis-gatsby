@@ -32,22 +32,13 @@
 	}
 }
 
-@mixin increment-delay($offset: .05s, $count: 10, $delay: 0, $type: transition) {
-  @for $i from 1 through $count {
-    $time: ($i * $offset) + $delay;
-    &:nth-child(#{$i}) {
-      #{$type}-delay: $time;
-    }
-  }
-}
-
 .banner h1 {
     backface-visibility: hidden;
     perspective: 1000;
     transform: translate3d(0,0,0);
     transform: translateZ(0);
     opacity: 0;
-	animation: blurFadeIn 2s $ease-in forwards;
+	animation: blurFadeIn 1s $ease-in forwards;
 }
 .banner h2 {
     backface-visibility: hidden;
@@ -55,7 +46,7 @@
     transform: translate3d(0,0,0);
     transform: translateZ(0);
     opacity: 0;
-	animation: fadeIn 1s 1.5s $ease-in forwards;
+	animation: fadeIn 1s .8s $ease-in forwards;
 }
 .banner h4 {
     backface-visibility: hidden;
@@ -63,7 +54,7 @@
     transform: translate3d(0,0,0);
     transform: translateZ(0);
     opacity: 0;
-	animation: fadeIn 1s 2s $ease-in forwards;
+	animation: fadeIn 1s 1.2s $ease-in forwards;
 }
 
 .logos .logo {
@@ -72,6 +63,6 @@
     transform: translate3d(0,0,0);
     transform: translateZ(0);
     opacity: 0;
-    animation: fadeInLogo 1s $ease-in forwards;
+    animation: fadeInLogo .3s $ease-in forwards;
     @include increment-delay($type: animation, $offset: .1s, $count: 15);
 }

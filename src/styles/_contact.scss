@@ -1,0 +1,152 @@
+@import 'toolkit';
+
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	max-width: 100%;
+	width: 100%;
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	font-weight: 400;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	padding: 0 1em;
+	color: rgba(0,0,0,.4);
+	font-weight: bold;
+    font-size: .75rem;
+    border-radius: 4px;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
+	width: 100%;
+}
+
+////////
+
+.input--manami {
+    display: flex;
+    overflow: hidden;
+    padding-top: 1.25rem;
+}
+
+.input__field--manami {
+    width: 100%;
+    height: 2rem;
+	background: transparent;
+    padding-top: .5em;
+	color: $text-color;
+	z-index: 100;
+	opacity: 0;
+}
+
+.input__label--manami {
+    width: 100%;
+    height: 2rem;
+	position: absolute;
+	text-align: left;
+    padding-top: .5em;
+    background: rgba(0,0,0,.05);
+	pointer-events: none;
+    font-size: 1em;
+    box-shadow: inset 0 1px rgba(0,0,0,.1), inset 0 -1px rgba(255,255,255,.95);
+}
+
+.input__label--manami::before,
+.input__label--manami::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+
+.input__label--manami::before {
+	height: 100%;
+    background: tint($primary-color, 85%);
+    box-shadow: inset 0 1px rgba(0,0,0,.1), inset 0 -1px rgba(255,255,255,.95);
+    border-radius: 4px;
+	top: 0;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+	transition: transform 0.2s $ease-in, opacity 0.2s $ease-in;
+}
+
+.input__field--manami:focus + .input__label--manami::before,
+.input__field--manami:valid + .input__label--manami::before,
+.input--filled .input__label--manami::before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-timing-function: $ease-out;
+}
+
+.input__label--manami::after {
+	height: 1px;
+	background: rgba(255,255,255,.9);
+	top: 100%;
+	transition: opacity 0.2s $ease-in;
+}
+
+.input__field--manami:focus + .input__label--manami::after,
+.input--filled .input__label--manami::after {
+    //background: rgba(0,0,0,.2);
+}
+
+.input__label-content--manami {
+    font-family: $font-family2;
+    color: rgba(0,0,0,.25);
+	padding: 0;
+	transform-origin: 0 0;
+	transition: transform 0.2s $ease-in, opacity 0.2s $ease-in;
+}
+
+.input__field--manami:focus,
+.input__field--manami:valid,
+.input--filled .input__field--manami {
+	opacity: 1;
+	transition: opacity 0s 0.2s $ease-in;
+}
+
+
+.input__field--manami:focus + .input__label--manami .input__label-content--manami,
+.input__field--manami:valid + .input__label--manami .input__label-content--manami,
+.input--filled .input__label--manami .input__label-content--manami {
+	color: rgba(0,0,0,.75);
+    transform: translate3d(-.5rem, -1.2rem, 0) scale3d(0.65, 0.65, 1);
+}
+
+.input--manami textarea {
+    min-height: 150px;
+
+    & + label {
+        min-height: 150px;
+    }
+}
+
+
+
+
+.myForm {
+    background: tint($primary-color, 95%);
+    padding: 1rem;
+    border-radius: 8px;
+}

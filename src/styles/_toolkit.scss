@@ -67,14 +67,27 @@ $screen-xl-min: 1200px;
 
 
   ///////////////////////
+ // Animation delay ////
+///////////////////////
+@mixin increment-delay($offset: .05s, $count: 10, $delay: 0, $type: transition) {
+    @for $i from 1 through $count {
+        $time: ($i * $offset) + $delay;
+        &:nth-child(#{$i}) {
+        #{$type}-delay: $time;
+        }
+    }
+}
+
+
+  ///////////////////////
  // Variables //////////
 ///////////////////////
 
 // Colors
 $primary-color:    #3d4676;
 $secondary-color:  #e85b6f;
-$tertiary-color:   shade($primary-color, 20%);
-$header-color:      $tertiary-color;
+$tertiary-color:     shade($primary-color, 20%);
+$header-color:       $tertiary-color;
 $text-color:       #7F7B91;
 
 // Fonts
@@ -93,13 +106,15 @@ $shadow2: -2px 8px 22px 0 rgba(0, 0, 0, 0.15);
 $shadow3: 0 5px 15px rgba(0,0,0,.1),
           0 15px 35px rgba(0,0,0,.1),
           0 50px 100px rgba(50,50,93,.1);
-$shadow-3d-right: 1px 1px 5px 0 rgba(26,26,67,.05),
-                  27.1px 62.5px 125px -25px rgba(50,50,93,.5),
+$shadow-3d-right: 1px 1px 5px 0 rgba(27,27,27,.05),
+                  27.1px 62.5px 125px -25px rgba(55,55,55,.5),
                   16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
-$shadow-3d-left: 1px 1px 5px 0 rgba(26,26,67,.05),
-                 -27.1px 62.5px 125px -25px rgba(50,50,93,.5),
+$shadow-3d-left: 1px 1px 5px 0 rgba(27,27,27,.05),
+                 -27.1px 62.5px 125px -25px rgba(55,55,55,.5),
                  -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
 
 // 3D transform effects
+$transform-3d-right-box: translateX(50px) perspective(3190px) rotateY(-29deg) rotateX(4deg) rotate(1deg);
+
 $transform-3d-left: rotate3d(.5,.866,0,15deg) rotate(-1deg);
 $transform-3d-right: rotate3d(.5,-.866,0,15deg) rotate(1deg);
