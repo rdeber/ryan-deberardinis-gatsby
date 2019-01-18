@@ -40,30 +40,17 @@
         color: rgba(255,255,255,.7);
     }
 
-    // Indeed Academy
-    &:nth-of-type(2) {
-        background: #2164f3;
-    }
-    // Learning Spaces
-    &:nth-of-type(3) {
-        background: #2d3335;
+    &:nth-child(odd) {
+        background: $primary-color;
         figure {
             order: 2;
         }
-    }
-    // Solar Energy
-    &:nth-of-type(4) {
-        background: #009c4c;
-    }
-    // Mandaloun
-    &:nth-of-type(5) {
-        background: #430541;
-        figure {
-            order: 2;
+        .device {
+            margin-left: auto;
         }
     }
-    &:nth-of-type(6) {
-        background: #2d3335;
+    &:nth-child(even) {
+        background: #2d3335
     }
 }
 
