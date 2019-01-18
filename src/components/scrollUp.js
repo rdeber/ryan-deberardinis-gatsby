@@ -1,5 +1,6 @@
 import React from 'react';
 import { Events, animateScroll as scroll, scroller } from 'react-scroll'
+import { FaRocket } from 'react-icons/fa'
 
 
 class ScrollUp extends React.Component {
@@ -10,7 +11,6 @@ class ScrollUp extends React.Component {
   }
 
   componentDidMount() {
-
     Events.scrollEvent.register('begin', function () {
       console.log("begin", arguments);
     });
@@ -19,16 +19,24 @@ class ScrollUp extends React.Component {
       console.log("end", arguments);
     });
 
+    window.addEventListener("scroll", this.toggleBodyClass);
+    this.toggleBodyClass();
   }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.toggleBodyClass);
+  }
+
+  toggleBodyClass = () => {
+    if (window.scrollY > 500) {
+      document.body.classList.add("scrolled");
+    } else {
+      document.body.classList.remove("scrolled");
+    }
+  };
+
   scrollToTop() {
     scroll.scrollToTop();
-  }
-  scrollTo() {
-    scroller.scrollTo('scroll-to-element', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    })
   }
 
   componentWillUnmount() {
@@ -38,8 +46,8 @@ class ScrollUp extends React.Component {
 
   render() {
     return (
-      <div>
-          <a onClick={this.scrollToTop}>To the top!</a>
+      <div className="scrollToTop">
+          <a onClick={this.scrollToTop}><FaRocket />Back to Top</a>
       </div>
     );
   }

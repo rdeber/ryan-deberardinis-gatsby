@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Background from './background'
 import Header from './header'
 import Navbar from './navbar'
+import ScrollUp from './scrollUp'
 import '../styles/main.scss'
 
 const Layout = ({ children }) => (
@@ -27,6 +28,8 @@ const Layout = ({ children }) => (
         <div className="container wrap">
           {children}
         </div>
+
+        <ScrollUp />
       </>
     )}
   />

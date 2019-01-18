@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ScrollUp from '../components/scrollUp'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
@@ -127,8 +126,6 @@ const PhotosPage = (props) => (
           <Img fluid={props.data.photo23.childImageSharp.fluid} />
         </div>
       </section>
-
-      <ScrollUp />
 
     </div>
   </Layout>

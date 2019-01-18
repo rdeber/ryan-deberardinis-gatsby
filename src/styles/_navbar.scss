@@ -5,7 +5,6 @@
     width: 100%;
     z-index: 9999;
     border-top: 3px solid tint($primary-color, 20%);
-    background: rgba(255,255,255,.25);
     transition: .25s $ease-in;
 
     @include md {
@@ -76,7 +75,7 @@
 }
 
 .navbar-center .navbar-initials {
-    color: #fff;
+    color: rgba(255,255,255,.9);
     font-size: 1.75rem;
     font-weight: 900;
     letter-spacing: -.1rem;
@@ -87,6 +86,11 @@
     margin: -3px 1rem 0;
     position: relative;
     top: 3px;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
 
     @include md {
         background: $primary-color;

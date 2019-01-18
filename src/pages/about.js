@@ -24,70 +24,53 @@ const AboutPage = (props) => (
       </div>
     </section>
 
-    <div className="container">
-      <div className="columns">
+    <section className="skills">
+      <h4>My skills:</h4>
+      <span class="label label-rounded label-primary">HTML</span>
+      <span class="label label-rounded label-primary">CSS</span>
+      <span class="label label-rounded label-primary">SCSS/LESS</span>
+      <span class="label label-rounded label-primary">UI/UX</span>
+      <span class="label label-rounded label-primary">JavaScript</span>
+      <span class="label label-rounded label-primary">jQuery</span>
+      <span class="label label-rounded label-primary">Git</span>
+      <span class="label label-rounded label-primary">Bootstrap</span>
+      <span class="label label-rounded label-primary">Wordpress</span>
+      <span class="label label-rounded label-primary">Gulp/Grunt</span>
+      <span class="label label-rounded label-primary">Nodejs/NPM</span>
+      <span class="label label-rounded label-primary">React</span>
+      <span class="label label-rounded label-primary">PHP</span>
+      <span class="label label-rounded label-primary">Moodle</span>
+      <span class="label label-rounded label-primary">Photoshop</span>
+      <span class="label label-rounded label-primary">Illustrator</span>
+    </section>
 
-        <div className="column col-4">
-          <div className="card">
-            <div className="card-image">
-            <ScrollDown />
-              <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-            </div>
-            <div className="card-header">
-              <div className="card-title h5">Hello. I'm Ryan DeBerardinis.</div>
-              <div className="card-subtitle text-gray">a designer, developer and photographer working in New York City</div>
-            </div>
-            <div className="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis convallis nunc bibendum fermentum. Praesent gravida eros nisl, eget egestas tortor facilisis sed. Fusce at velit a nibh pretium dignissim imperdiet vitae turpis. Etiam egestas nulla at arcu scelerisque, quis maximus ex auctor. Proin pretium augue maximus, blandit ex nec, maximus neque. Pellentesque elementum nulla feugiat congue aliquet. Fusce lacus sem, fringilla in ultrices sit amet, efficitur sit amet massa. Phasellus bibendum maximus dui sodales pharetra. Nunc ultrices auctor mauris lobortis auctor. Mauris neque diam, luctus et scelerisque et, dapibus et neque. Mauris in finibus neque. Mauris quis leo sit amet nibh euismod congue ut id est. Nulla sit amet lacus quis risus sollicitudin facilisis quis ac nisi. Fusce in tellus scelerisque, aliquam odio.</p>
-            </div>
-            <div className="card-footer">
-              <button className="btn btn-primary">Click</button>
-            </div>
-          </div>
+    <section>
+      <h3>About this website:</h3>
+      <p>This website is build from scratch using the following technologies:</p>
+      <div className="logos">
+        <div className="logo">
+          <Img fluid={props.data.gatsby.childImageSharp.fluid} />
         </div>
-
-        <div className="column col-4">
-          <div className="card">
-            <div className="card-image">
-              <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-            </div>
-            <div className="card-header">
-              <div className="card-title h5">Header</div>
-              <div className="card-subtitle text-gray">subheader</div>
-            </div>
-            <div className="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis convallis nunc bibendum fermentum. Praesent gravida eros nisl, eget egestas tortor facilisis sed. Fusce at velit a nibh pretium dignissim imperdiet vitae turpis. Etiam egestas nulla at arcu scelerisque, quis maximus ex auctor. Proin pretium augue maximus, blandit ex nec, maximus neque. Pellentesque elementum nulla feugiat congue aliquet. Fusce lacus sem, fringilla in ultrices sit amet, efficitur sit amet massa. Phasellus bibendum maximus dui sodales pharetra. Nunc ultrices auctor mauris lobortis auctor. Mauris neque diam, luctus et scelerisque et, dapibus et neque. Mauris in finibus neque. Mauris quis leo sit amet nibh euismod congue ut id est. Nulla sit amet lacus quis risus sollicitudin facilisis quis ac nisi. Fusce in tellus scelerisque, aliquam odio.</p>
-            </div>
-            <div className="card-footer">
-              <button className="btn btn-primary">Click</button>
-            </div>
-          </div>
+        <div className="logo">
+          <Img fluid={props.data.react.childImageSharp.fluid} />
         </div>
-
-        <div className="column col-4">
-          <div className="card">
-            <div className="card-image">
-              <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-            </div>
-            <div className="card-header">
-              <div className="card-title h5">Header</div>
-              <div className="card-subtitle text-gray">subheader</div>
-            </div>
-            <div className="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis convallis nunc bibendum fermentum. Praesent gravida eros nisl, eget egestas tortor facilisis sed. Fusce at velit a nibh pretium dignissim imperdiet vitae turpis. Etiam egestas nulla at arcu scelerisque, quis maximus ex auctor. Proin pretium augue maximus, blandit ex nec, maximus neque. Pellentesque elementum nulla feugiat congue aliquet. Fusce lacus sem, fringilla in ultrices sit amet, efficitur sit amet massa. Phasellus bibendum maximus dui sodales pharetra. Nunc ultrices auctor mauris lobortis auctor. Mauris neque diam, luctus et scelerisque et, dapibus et neque. Mauris in finibus neque. Mauris quis leo sit amet nibh euismod congue ut id est. Nulla sit amet lacus quis risus sollicitudin facilisis quis ac nisi. Fusce in tellus scelerisque, aliquam odio.</p>
-            </div>
-            <div className="card-footer">
-              <button className="btn btn-primary">Click</button>
-            </div>
-          </div>
+        <div className="logo">
+          <Img fluid={props.data.html.childImageSharp.fluid} />
         </div>
-
-          <div name="scroll-to-element" className="element">
-            Scroll to element
+        <div className="logo">
+          <Img fluid={props.data.css.childImageSharp.fluid} />
         </div>
-
+        <div className="logo">
+          <Img fluid={props.data.sass.childImageSharp.fluid} />
+        </div>
+        <div className="logo">
+          <Img fluid={props.data.github.childImageSharp.fluid} />
+        </div>
+        <div className="logo">
+          <Img fluid={props.data.netlify.childImageSharp.fluid} />
+        </div>
       </div>
-    </div>
+    </section>
 
   </Layout>
 )
@@ -97,6 +80,57 @@ export default AboutPage
 export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "photos/about-bg.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+
+    react: file(relativePath: { eq: "tech/react.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    gatsby: file(relativePath: { eq: "tech/gatsby.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    html: file(relativePath: { eq: "tech/html.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    css: file(relativePath: { eq: "tech/css.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sass: file(relativePath: { eq: "tech/sass.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    netlify: file(relativePath: { eq: "tech/netlify.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    github: file(relativePath: { eq: "tech/github.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
