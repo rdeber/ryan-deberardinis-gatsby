@@ -42,6 +42,7 @@
 
     &:nth-child(odd) {
         background: $primary-color;
+        
         figure {
             order: 2;
         }

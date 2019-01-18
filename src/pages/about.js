@@ -8,70 +8,73 @@ import ScrollDown from '../components/scrollDown'
 
 const AboutPage = (props) => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Ryan DeBerardinis - About" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `photos`]} />
 
-    <section className="pageCover">
-      <div className="pageCoverImg">
-        <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-      </div>
-      <div className="box-3d-right">
-        <div className="pageCoverTitle">
-          <h1 className="myName">Hello, I'm Ryan.</h1>
-          <h2 className="mySkills">a creative professional from NYC</h2>
-          <p>My work focuses on the intersection between design and development. I have a relentless passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City.</p>
-          <p>I'm currently working as lead front end developer for Remote-Learner in NYC</p>
+    <div className="about">
+      <section className="pageCover">
+        <div className="pageCoverImg">
+          <Img fluid={props.data.imageOne.childImageSharp.fluid} />
         </div>
-      </div>
-    </section>
+        <div className="box-3d-right">
+          <div className="pageCoverTitle">
+            <h1 className="myName">Hello, I'm Ryan.</h1>
+            <h2 className="mySkills">a creative professional from NYC</h2>
+            <p>My work focuses on the intersection between design and development. I have a relentless passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City.</p>
+            <p>I'm currently working as lead front end developer for Remote-Learner in NYC</p>
+          </div>
+        </div>
+      </section>
 
-    <section className="skills">
-      <h4>My skills:</h4>
-      <span class="label label-rounded label-primary">HTML</span>
-      <span class="label label-rounded label-primary">CSS</span>
-      <span class="label label-rounded label-primary">SCSS/LESS</span>
-      <span class="label label-rounded label-primary">UI/UX</span>
-      <span class="label label-rounded label-primary">JavaScript</span>
-      <span class="label label-rounded label-primary">jQuery</span>
-      <span class="label label-rounded label-primary">Git</span>
-      <span class="label label-rounded label-primary">Bootstrap</span>
-      <span class="label label-rounded label-primary">Wordpress</span>
-      <span class="label label-rounded label-primary">Gulp/Grunt</span>
-      <span class="label label-rounded label-primary">Nodejs/NPM</span>
-      <span class="label label-rounded label-primary">React</span>
-      <span class="label label-rounded label-primary">PHP</span>
-      <span class="label label-rounded label-primary">Moodle</span>
-      <span class="label label-rounded label-primary">Photoshop</span>
-      <span class="label label-rounded label-primary">Illustrator</span>
-    </section>
+      <section className="skills">
+        <h4>My skills:</h4>
+        <div className="skills-wrap">
+          <span class="label label-rounded label-primary">HTML</span>
+          <span class="label label-rounded label-primary">CSS</span>
+          <span class="label label-rounded label-primary">SCSS/LESS</span>
+          <span class="label label-rounded label-primary">UI/UX</span>
+          <span class="label label-rounded label-primary">JavaScript</span>
+          <span class="label label-rounded label-primary">jQuery</span>
+          <span class="label label-rounded label-primary">Git</span>
+          <span class="label label-rounded label-primary">Bootstrap</span>
+          <span class="label label-rounded label-primary">Wordpress</span>
+          <span class="label label-rounded label-primary">Gulp/Grunt</span>
+          <span class="label label-rounded label-primary">Nodejs/NPM</span>
+          <span class="label label-rounded label-primary">React</span>
+          <span class="label label-rounded label-primary">PHP</span>
+          <span class="label label-rounded label-primary">Moodle</span>
+          <span class="label label-rounded label-primary">Photoshop</span>
+          <span class="label label-rounded label-primary">Illustrator</span>
+        </div>
+      </section>
 
-    <section>
-      <h3>About this website:</h3>
-      <p>This website is build from scratch using the following technologies:</p>
-      <div className="logos">
-        <div className="logo">
-          <Img fluid={props.data.gatsby.childImageSharp.fluid} />
+      <section className="tech">
+        <h3>About this website:</h3>
+        <p>This website is build from scratch using the following technologies:</p>
+        <div className="logos">
+          <div className="logo">
+            <Img fluid={props.data.gatsby.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.react.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.html.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.css.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.sass.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.github.childImageSharp.fluid} />
+          </div>
+          <div className="logo">
+            <Img fluid={props.data.netlify.childImageSharp.fluid} />
+          </div>
         </div>
-        <div className="logo">
-          <Img fluid={props.data.react.childImageSharp.fluid} />
-        </div>
-        <div className="logo">
-          <Img fluid={props.data.html.childImageSharp.fluid} />
-        </div>
-        <div className="logo">
-          <Img fluid={props.data.css.childImageSharp.fluid} />
-        </div>
-        <div className="logo">
-          <Img fluid={props.data.sass.childImageSharp.fluid} />
-        </div>
-        <div className="logo">
-          <Img fluid={props.data.github.childImageSharp.fluid} />
-        </div>
-        <div className="logo">
-          <Img fluid={props.data.netlify.childImageSharp.fluid} />
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
   </Layout>
 )
 

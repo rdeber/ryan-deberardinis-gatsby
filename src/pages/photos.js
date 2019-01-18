@@ -8,7 +8,7 @@ import { graphql } from 'gatsby'
 
 const PhotosPage = (props) => (
   <Layout>
-    <SEO title="Home" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `react`]} />
+    <SEO title="Ryan DeBerardinis - Photo" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `photos`]} />
 
     <div className="photos">
       <section className="banner">

@@ -57,12 +57,3 @@
 	animation: fadeIn 1s 1.2s $ease-in forwards;
 }
 
-.logos .logo {
-    backface-visibility: hidden;
-    perspective: 1000;
-    transform: translate3d(0,0,0);
-    transform: translateZ(0);
-    opacity: 0;
-    animation: fadeInLogo .3s $ease-in forwards;
-    @include increment-delay($type: animation, $offset: .1s, $count: 15);
-}

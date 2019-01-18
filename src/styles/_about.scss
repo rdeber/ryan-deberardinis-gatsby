@@ -24,7 +24,37 @@
     z-index: 1;
     max-width: 600px;
     background: rgba(255,255,255,.5);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 13px;
-    margin-right: 1rem;
+    margin-right: 3rem;
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.about section:not(.pageCover) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.skills-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 600px;
+
+    .label {
+        margin: .1rem;
+    }
+}
+
+.tech {
+    .logos {
+        max-width: 600px; 
+    }
 }

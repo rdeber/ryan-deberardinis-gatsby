@@ -7,7 +7,7 @@ import { graphql } from 'gatsby'
 
 const WorkPage = (props) => (
   <Layout>
-    <SEO title="Home" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `react`]} />
+    <SEO title="Ryan DeBerardinis - Work" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `portfolio`]} />
     <div className="work">
 
       <section className="banner">

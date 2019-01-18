@@ -46,9 +46,7 @@ class ScrollUp extends React.Component {
 
   render() {
     return (
-      <div className="scrollToTop">
-          <a onClick={this.scrollToTop}><FaRocket />Back to Top</a>
-      </div>
+      <button className="scrollToTop" onClick={this.scrollToTop}><FaRocket />Back to Top</button>
     );
   }
 };
