@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { TiArrowBackOutline } from 'react-icons/ti'
+
 
 
 const WorkPage = (props) => (
@@ -13,7 +15,7 @@ const WorkPage = (props) => (
       <section className="banner">
         <h1>Creative Work</h1>
         <h2>Frontend Development + UI Design</h2>
-        <h4>I'm proud to have worked with some awesome companies:</h4>
+        <h4>I'm proud to have worked on some awesome projects:</h4>
         <div className="logos">
           <div className="logo">
             <Img fluid={props.data.clientlogo1.childImageSharp.fluid} />
@@ -66,11 +68,13 @@ const WorkPage = (props) => (
       <section className="project">
         <figure className="device-wrap">
           <div className="device device-3d-left">
+            <div className="device-home"></div>
+            <div className="device-camera"></div>
             <div className="browser-ui">
               <div className="browser-ui-buttons">
                 <div className="browser-ui-button"></div>
                 <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>  
+                <div className="browser-ui-button"></div>
               </div>
               <div className="browser-ui-search"></div>
               <div className="browser-ui-close"></div>
@@ -79,6 +83,7 @@ const WorkPage = (props) => (
               <Img fluid={props.data.imageOne.childImageSharp.fluid} />
             </div>
           </div>
+          <h4><TiArrowBackOutline /> Scroll to View</h4>
         </figure>
         <article>
           <h2>Remote-Learner.com</h2>
@@ -88,15 +93,17 @@ const WorkPage = (props) => (
           <a href="#" className="btn btn-primary">View Site</a>
         </article>
       </section>
-      
+
       <section className="project">
         <figure className="device-wrap">
           <div className="device device-3d-right">
+            <div className="device-home"></div>
+            <div className="device-camera"></div>
             <div className="browser-ui">
               <div className="browser-ui-buttons">
                 <div className="browser-ui-button"></div>
                 <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>  
+                <div className="browser-ui-button"></div>
               </div>
               <div className="browser-ui-search"></div>
               <div className="browser-ui-close"></div>
@@ -105,6 +112,7 @@ const WorkPage = (props) => (
               <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
             </div>
           </div>
+          <h4><TiArrowBackOutline /> Scroll to View</h4>
         </figure>
         <article>
           <h2>Learning Spaces</h2>
@@ -118,11 +126,13 @@ const WorkPage = (props) => (
       <section className="project">
         <figure className="device-wrap">
           <div className="device device-3d-left">
+            <div className="device-home"></div>
+            <div className="device-camera"></div>
             <div className="browser-ui">
               <div className="browser-ui-buttons">
                 <div className="browser-ui-button"></div>
                 <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>  
+                <div className="browser-ui-button"></div>
               </div>
               <div className="browser-ui-search"></div>
               <div className="browser-ui-close"></div>
@@ -131,6 +141,7 @@ const WorkPage = (props) => (
               <Img fluid={props.data.imageFour.childImageSharp.fluid} />
             </div>
           </div>
+          <h4><TiArrowBackOutline /> Scroll to View</h4>
         </figure>
         <article>
           <h2>Mandaloun Bistro</h2>
@@ -170,8 +181,8 @@ export const pageQuery = graphql`
         }
       }
     }
-  
-  
+
+
 
     clientlogo1: file(relativePath: { eq: "clients/logo1.png" }) {
       childImageSharp {

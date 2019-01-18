@@ -4,6 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { FaUserNinja } from 'react-icons/fa'
 import { FaCode } from 'react-icons/fa'
 import { FaCamera } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { FaCodepen } from 'react-icons/fa'
@@ -31,7 +32,7 @@ class Navbar extends React.Component {
     return (
       <header id="navbar" className="navbar">
         <div className="navbar-section">
-          <nav className="navbar-nav">
+          <nav className="navbar-nav" role="navigation">
             <span className="tooltip tooltip-bottom" data-tooltip="Who am I?">
               <AniLink to="/about/" activeClassName="active" fade>
                 <FaUserNinja />
@@ -48,6 +49,12 @@ class Navbar extends React.Component {
               <AniLink to="/photos/" activeClassName="active" fade>
                 <FaCamera />
                 <span className="text-wrap">Photos</span>
+              </AniLink>
+            </span>
+            <span className="tooltip tooltip-bottom" data-tooltip="Get in Touch">
+              <AniLink to="/contact/" activeClassName="active" fade>
+                <FaEnvelope />
+                <span className="text-wrap">Contact</span>
               </AniLink>
             </span>
           </nav>

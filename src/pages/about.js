@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ScrollDown from '../components/scrollDown'
 
 
 const AboutPage = (props) => (
@@ -13,7 +12,7 @@ const AboutPage = (props) => (
     <div className="about">
       <section className="pageCover">
         <div className="pageCoverImg">
-          <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+          <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Ryan DeBerardinis self portrait" />
         </div>
         <div className="box-3d-right">
           <div className="pageCoverTitle">
@@ -28,22 +27,22 @@ const AboutPage = (props) => (
       <section className="skills">
         <h4>My skills:</h4>
         <div className="skills-wrap">
-          <span class="label label-rounded label-primary">HTML</span>
-          <span class="label label-rounded label-primary">CSS</span>
-          <span class="label label-rounded label-primary">SCSS/LESS</span>
-          <span class="label label-rounded label-primary">UI/UX</span>
-          <span class="label label-rounded label-primary">JavaScript</span>
-          <span class="label label-rounded label-primary">jQuery</span>
-          <span class="label label-rounded label-primary">Git</span>
-          <span class="label label-rounded label-primary">Bootstrap</span>
-          <span class="label label-rounded label-primary">Wordpress</span>
-          <span class="label label-rounded label-primary">Gulp/Grunt</span>
-          <span class="label label-rounded label-primary">Nodejs/NPM</span>
-          <span class="label label-rounded label-primary">React</span>
-          <span class="label label-rounded label-primary">PHP</span>
-          <span class="label label-rounded label-primary">Moodle</span>
-          <span class="label label-rounded label-primary">Photoshop</span>
-          <span class="label label-rounded label-primary">Illustrator</span>
+          <span className="label label-rounded label-primary">HTML</span>
+          <span className="label label-rounded label-primary">CSS</span>
+          <span className="label label-rounded label-primary">SCSS/LESS</span>
+          <span className="label label-rounded label-primary">UI/UX</span>
+          <span className="label label-rounded label-primary">JavaScript</span>
+          <span className="label label-rounded label-primary">jQuery</span>
+          <span className="label label-rounded label-primary">Git</span>
+          <span className="label label-rounded label-primary">Bootstrap</span>
+          <span className="label label-rounded label-primary">Wordpress</span>
+          <span className="label label-rounded label-primary">Gulp/Grunt</span>
+          <span className="label label-rounded label-primary">Nodejs/NPM</span>
+          <span className="label label-rounded label-primary">React</span>
+          <span className="label label-rounded label-primary">PHP</span>
+          <span className="label label-rounded label-primary">Moodle</span>
+          <span className="label label-rounded label-primary">Photoshop</span>
+          <span className="label label-rounded label-primary">Illustrator</span>
         </div>
       </section>
 
@@ -52,25 +51,25 @@ const AboutPage = (props) => (
         <p>This website is build from scratch using the following technologies:</p>
         <div className="logos">
           <div className="logo">
-            <Img fluid={props.data.gatsby.childImageSharp.fluid} />
+            <Img fluid={props.data.gatsby.childImageSharp.fluid}  alt="Gatsby Logo"/>
           </div>
           <div className="logo">
-            <Img fluid={props.data.react.childImageSharp.fluid} />
+            <Img fluid={props.data.react.childImageSharp.fluid} alt="React JS Logo"/>
           </div>
           <div className="logo">
-            <Img fluid={props.data.html.childImageSharp.fluid} />
+            <Img fluid={props.data.html.childImageSharp.fluid} alt="HTML5 Logo"/>
           </div>
           <div className="logo">
-            <Img fluid={props.data.css.childImageSharp.fluid} />
+            <Img fluid={props.data.css.childImageSharp.fluid} alt="CSS3 Logo"/>
           </div>
           <div className="logo">
-            <Img fluid={props.data.sass.childImageSharp.fluid} />
+            <Img fluid={props.data.sass.childImageSharp.fluid} alt="SASS Logo"/>
           </div>
           <div className="logo">
-            <Img fluid={props.data.github.childImageSharp.fluid} />
+            <Img fluid={props.data.github.childImageSharp.fluid} alt="Github Logo"/>
           </div>
           <div className="logo">
-            <Img fluid={props.data.netlify.childImageSharp.fluid} />
+            <Img fluid={props.data.netlify.childImageSharp.fluid} alt="Netlify Logo"/>
           </div>
         </div>
       </section>
@@ -84,8 +83,11 @@ export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "photos/about-bg.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
+        fluid(
+            maxWidth: 1000
+            duotone: { highlight: "#ffffff", shadow: "#3d4676", opacity: 100 }
+          ) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

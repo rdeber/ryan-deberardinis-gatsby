@@ -11,6 +11,7 @@
 
     > * {
         flex: 1;
+        max-width: 500px;
     }
 
     @include md {
@@ -40,115 +41,23 @@
         color: rgba(255,255,255,.7);
     }
 
+    &:nth-child(even) {
+        background: #333542;
+    }
+
     &:nth-child(odd) {
         background: $primary-color;
-        
+
         figure {
             order: 2;
+
+            h4 {
+                left: auto;
+                right: -100px
+            }
         }
         .device {
             margin-left: auto;
         }
     }
-    &:nth-child(even) {
-        background: #2d3335
-    }
-}
-
-
-
-.device {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 480px;
-    height: 360px;
-    border-radius: 13px;
-    background: #fff;
-    padding: .25rem 1rem;
-
-    .gatsby-image-wrapper {
-        width: 100%;
-        height: 100%;
-    }
-
-}
-
-.device-img {
-    width: 100%;
-    height: auto;
-    overflow-y: scroll;
-    perspective: 1500px;
-}
-
-.browser-ui {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ddd;
-    width: 100%;
-    min-height: 25px;
-    border-radius: 4px 4px 0 0;
-    padding: 0 .25rem;
-}
-
-.browser-ui-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.browser-ui-button {
-    background: #777;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-
-    & + & {
-        margin-left: .1rem;
-    }
-
-    &:nth-of-type(1) {
-        background: #ea6e4c;
-    }
-    &:nth-of-type(2) {
-        background: #e6a935;
-    }
-    &:nth-of-type(3) {
-        background: #85c33d;
-    }
-}
-
-.browser-ui-search {
-    background: #bbb;
-    width: 55%;
-    height: 16px;
-    border-radius: 3px;
-}
-
-.browser-ui-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-
-    &:before,
-    &:after {
-        position: absolute;
-        content: '';
-        height: 12px;
-        width: 3px;
-        background-color: #aaa;
-        border-radius: 3px
-    }
-
-    &:before {
-        transform: rotate(45deg);
-      }
-    &:after {
-        transform: rotate(-45deg);
-      }
 }
