@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: column;
     min-height: 200px;
-    padding: 5rem 1rem;
+    padding: 2.5rem 1rem;
     margin: 0 -.4rem;
 
     > * {
@@ -15,6 +15,7 @@
     }
 
     @include md {
+        padding: 5rem 0 5rem;
         flex-direction: row;
     }
 
@@ -37,6 +38,28 @@
         text-transform: uppercase;
     }
 
+    .device-wrap h4 {
+        transform: rotate(0);
+        top: -25px;
+        order: 1;
+
+        @include md {
+            transform: rotate(-90deg);
+            position: absolute;
+            left: -125px;
+            top: 50%;
+        }
+    }
+
+    .device-wrap svg {
+        color: tint($primary-color, 20%);
+        transform: rotate(-90deg);
+
+        @include md {
+            transform: rotate(-13deg);
+        }
+    }
+
     p {
         color: rgba(255,255,255,.7);
     }
@@ -49,13 +72,20 @@
         background: $primary-color;
 
         figure {
-            order: 2;
-
-            h4 {
-                left: auto;
-                right: -100px
+            @include md {
+                order: 2;
             }
         }
+
+        h4 {
+            left: auto;
+            right: auto;
+
+            @include md {
+                right: -125px;
+            }
+        }
+
         .device {
             margin-left: auto;
         }

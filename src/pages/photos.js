@@ -57,6 +57,7 @@ const PhotosPage = (props) => (
 
       <section className="photo-grid">
         <div className="photo">
+          <h5>New York City</h5>
           <Img fluid={props.data.photo1.childImageSharp.fluid} />
         </div>
         <div className="photo">
@@ -138,168 +139,168 @@ export const pageQuery = graphql`
     photo1: file(relativePath: { eq: "photos/2016-12-3-NYC-Rooftop_5983-1-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo2: file(relativePath: { eq: "photos/5-Pointz-Brooklyn-Manhattan-084-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo3: file(relativePath: { eq: "photos/2015-10-15-Williamsburg-Bridge_0027-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo4: file(relativePath: { eq: "photos/2015-10-15-Williamsburg-Bridge_0419-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo5: file(relativePath: { eq: "photos/2016-1-2-NYC-NYD2_3900a-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo6: file(relativePath: { eq: "photos/2016-12-3-NYC-Rooftop_5983-1-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo7: file(relativePath: { eq: "photos/big-red-tree-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo8: file(relativePath: { eq: "photos/Cali-Trip-09-253-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo9: file(relativePath: { eq: "photos/denver-lightning-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo10: file(relativePath: { eq: "photos/Great-Sand-Dunes-NP-047-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo11: file(relativePath: { eq: "photos/IMG_3608-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo12: file(relativePath: { eq: "photos/IMG_3690-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo13: file(relativePath: { eq: "photos/IMG_3762-panoramic-600x361.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo14: file(relativePath: { eq: "photos/IMG_4314-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo15: file(relativePath: { eq: "photos/IMG_4387-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo16: file(relativePath: { eq: "photos/IMG_6386-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo17: file(relativePath: { eq: "photos/IMG_7557_0985-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo18: file(relativePath: { eq: "photos/IMG_9017-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     imageOne: file(relativePath: { eq: "photos/IMG_9290_tonemapped-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo19: file(relativePath: { eq: "photos/IMG_9612-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo20: file(relativePath: { eq: "photos/May-Trip-10-270-4-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo21: file(relativePath: { eq: "photos/Great-Sand-Dunes-NP-162-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo22: file(relativePath: { eq: "photos/Saturday-in-December_1720-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     photo23: file(relativePath: { eq: "photos/Staten-Island-065a_b_c_tonemapped-600x403.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

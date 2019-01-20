@@ -83,7 +83,7 @@ const WorkPage = (props) => (
               <Img fluid={props.data.imageOne.childImageSharp.fluid} />
             </div>
           </div>
-          <h4><TiArrowBackOutline /> Scroll to View</h4>
+          <h4><TiArrowBackOutline /> Scroll Device to View</h4>
         </figure>
         <article>
           <h2>Remote-Learner.com</h2>
@@ -112,7 +112,7 @@ const WorkPage = (props) => (
               <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
             </div>
           </div>
-          <h4><TiArrowBackOutline /> Scroll to View</h4>
+          <h4><TiArrowBackOutline /> Scroll Device to View</h4>
         </figure>
         <article>
           <h2>Learning Spaces</h2>
@@ -141,7 +141,7 @@ const WorkPage = (props) => (
               <Img fluid={props.data.imageFour.childImageSharp.fluid} />
             </div>
           </div>
-          <h4><TiArrowBackOutline /> Scroll to View</h4>
+          <h4><TiArrowBackOutline /> Scroll Device to View</h4>
         </figure>
         <article>
           <h2>Mandaloun Bistro</h2>
