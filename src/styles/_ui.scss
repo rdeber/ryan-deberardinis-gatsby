@@ -7,6 +7,16 @@ h4 {
     font-family: $font-family3;
 }
 
+.label,
+.label.label-rounded {
+    padding: .2rem .5rem;
+    transition: all .2s $ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 
 // Style scrollbars for webkit browsers.
 ::-webkit-scrollbar{
@@ -34,10 +44,11 @@ h4 {
     flex-direction: column;
     margin: 1rem 0 3rem;
     text-align: center;
-    min-height: 80vh;
 
-    @include md {
+
+    @include xl {
         margin: 4rem 0 0;
+        min-height: 80vh;
     }
 
     h1 {
@@ -163,8 +174,10 @@ h4 {
 .box-3d-right {
     box-shadow: $shadow3;
     border-radius: 9px;
+    will-change: transform;
+    transition: all .25s $ease-in;
 
-    @include md {
+    @include lg {
         box-shadow: $shadow-3d-right;
         transform: $transform-3d-right-box;
     }

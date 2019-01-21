@@ -16,7 +16,7 @@
 
     a {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         color: $primary-color;
@@ -40,36 +40,55 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    @include md {
+
+    @include lg {
         justify-content: flex-start;
     }
 
     a {
-        font-size: 1.25rem;
         font-weight: 900;
         text-transform: uppercase;
         text-decoration: none;
 
-        @include md {
-            font-size: 1rem;
+        @include sm {
             margin-right: 1rem;
+            font-size: .75rem;
+        }
+
+        @include lg {
+            font-size: .9rem;
+        }
+
+        @include xl {
+            font-size: 1rem;
+        }
+    }
+
+    svg {
+        font-size: 1.25rem;
+
+        @include md  {
+            font-size: .8rem;
+            margin-right: .2rem;
+            color: lighten($primary-color, 25%);
         }
     }
 
     // Hide nav text on mobile.
     span.text-wrap {
         display: none;
-
         // Show nav text on desktop.
-        @include md {
+        @include lg {
             display: block;
         }
     }
 
-    // Hide icons on desktop.
-    @include md {
-        svg {
-            display: none;
+    // Hide about and contact links on mobile.W
+    span:nth-of-type(1),
+    span:nth-of-type(4) {
+        display: none;
+        @include md {
+            display: inline;
         }
     }
 }
@@ -80,7 +99,7 @@
     font-weight: 900;
     letter-spacing: -.1rem;
     box-shadow: $shadow2;
-    background: tint($primary-color, 20%);
+    background: $primary-color;
     padding: .1rem .3rem;
     border-radius: 0 0 5px 5px;
     margin: -3px 1rem 0;
@@ -93,7 +112,6 @@
     }
 
     @include md {
-        background: $primary-color;
         font-size: 2rem;
     }
 }
@@ -113,6 +131,28 @@
 
         a {
             margin-left: 1rem;
+        }
+    }
+
+    .external-links {
+        display: none;
+
+        @include md {
+            display: flex;
+        }
+    }
+
+    .text-wrap {
+        display: none;
+    }
+
+    .internal-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        @include md {
+            display: none;
         }
     }
 }

@@ -1,10 +1,18 @@
 @import 'toolkit';
 
+.about {
+    margin-top: -5rem;
+}
+
 .pageCover {
     min-height: 100vh;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
+
+    @include lg {
+        justify-content: flex-end;
+    }
 }
 
 .pageCoverImg {
@@ -17,19 +25,40 @@
 
     .gatsby-image-wrapper {
         min-height: 100vh;
+        max-height: 100vh;
+    }
+}
+
+.pageCoverInfo {
+    z-index: 1;
+    margin: 1rem 0 0;
+
+    @include lg {
+        max-width: 33rem;
+        margin: 2rem 6rem 0 0;
     }
 }
 
 .pageCoverTitle {
     z-index: 1;
-    max-width: 600px;
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.6);
     padding: 2rem;
     border-radius: 13px;
-    margin-right: 3rem;
+
+    h1 {
+        font-size: 1.9rem;
+
+        @include md {
+            font-size: 3rem;
+        }
+    }
 
     p {
-        font-size: 1rem;
+        font-size: .9rem;
+
+        @include md {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -38,9 +67,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin: 0 -.4rem 3rem;
+    position: relative;
+    background: #fff;
 }
 
+.about section.skills {
+    background: $primary-color;
+    padding: 2rem 0 3rem;
+
+    h4 {
+        color: rgba(255,255,255,.9);
+    }
+}
 .skills-wrap {
     display: flex;
     justify-content: center;
@@ -49,7 +88,12 @@
     max-width: 600px;
 
     .label {
-        margin: .1rem;
+        margin: .2rem;
+        background: tint($primary-color, 20%);
+
+        &:hover {
+            background: tint($primary-color, 25%);
+        }
     }
 }
 

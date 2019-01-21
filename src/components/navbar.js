@@ -66,9 +66,25 @@ class Navbar extends React.Component {
 
         <div className="navbar-section">
           <nav className="navbar-links">
-            <a href="/" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
-            <a href="/" className="tooltip tooltip-bottom" data-tooltip="Check out my Codepens"><FaCodepen /></a>
-            <a href="/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
+            <span className="external-links">
+              <a href="/" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
+              <a href="/" className="tooltip tooltip-bottom" data-tooltip="Check out my Codepens"><FaCodepen /></a>
+              <a href="/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
+            </span>
+            <span className="internal-links">
+              <span className="tooltip tooltip-bottom" data-tooltip="Who am I?">
+                <AniLink to="/about/" activeClassName="active" fade>
+                  <FaUserNinja />
+                  <span className="text-wrap">About</span>
+                </AniLink>
+              </span>
+              <span className="tooltip tooltip-bottom" data-tooltip="Get in Touch">
+                <AniLink to="/contact/" activeClassName="active" fade>
+                  <FaEnvelope />
+                  <span className="text-wrap">Contact</span>
+                </AniLink>
+              </span>
+            </span>
           </nav>
         </div>
       </header>

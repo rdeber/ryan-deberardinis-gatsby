@@ -6,7 +6,7 @@
     align-items: center;
     margin-bottom: 2rem;
 
-    @include sm {
+    @include md {
         flex-direction: row;
         justify-content: center;
         margin: 2rem 10% 0;
@@ -19,11 +19,10 @@
 
 .myTitle {
     position: relative;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 0;
 }
 
 .myName {
@@ -33,15 +32,22 @@
     letter-spacing: -1.5px;
     margin-bottom: 0;
 
-    @include sm {
+    @include md {
+        font-size: 61px;
+    }
+
+    @include lg {
         font-size: 66px;
     }
 }
 
 .mySkills {
-    font-size: 5.5vw;
+    font-size: 5.3vw;
     font-weight: 300;
 
+    @include md {
+        font-size: 25px;
+    }
     @include md {
         font-size: 27px;
     }
