@@ -106,11 +106,6 @@
 	transition: opacity 0.2s $ease-in;
 }
 
-.input__field--manami:focus + .input__label--manami::after,
-.input--filled .input__label--manami::after {
-    //background: rgba(0,0,0,.2);
-}
-
 .input__label-content--manami {
     font-family: $font-family2;
     color: rgba(0,0,0,.25);
@@ -143,10 +138,29 @@
 }
 
 
-
-
 .myForm {
     background: tint($primary-color, 95%);
     padding: 1rem;
     border-radius: 8px;
+}
+
+
+.contact {
+
+	h1 {
+		line-height: 1.2;
+	}
+
+	.external-links {
+		font-size: 2.5rem;
+		text-align: center;
+
+		@include md {
+			text-align: left;
+		}
+
+		a {
+			margin-right: 1rem;
+		}
+	}
 }
