@@ -8,10 +8,11 @@ import styles from '../styles/index.module.scss'
 const IndexPage = () => (
   <Layout>
     <SEO title="Ryan DeBerardinis" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `react`]} />
-    <section className={styles.homeHero}>
-      <div className={styles.myTitle}>
-        <h1 className={styles.myName}>RYAN DeBERARDINIS</h1>
-        <h2 className={styles.mySkills}>Developer + Designer + Photographer</h2>
+    <section className="home-banner">
+      <div className="my-title">
+        <h1 className="my-name">RYAN DeBERARDINIS</h1>
+        <h2 className="my-positions">Developer + Designer + Photographer</h2>
+        <p className="my-description">I'm always interested in hearing about new projects. Drop me a line if you'd like to collaborate on something new.</p>
       </div>
       <div className="box-3d-right contact-form">
         <div className="myForm">

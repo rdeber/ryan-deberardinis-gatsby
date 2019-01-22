@@ -114,7 +114,8 @@ $shadow-3d-left: 1px 1px 5px 0 rgba(27,27,27,.05),
                  -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
 
 // 3D transform effects
-$transform-3d-right-box: translateX(50px) perspective(3190px) rotateY(-29deg) rotateX(4deg) rotate(1deg);
+$transform-3d-right-box: perspective(3190px) rotateY(-27deg) rotateX(4deg) rotate(1deg);
+$transform-3d-left-box: perspective(3190px) rotateY(27deg) rotateX(4deg) rotate(1deg);
 
 $transform-3d-left: rotate3d(.5,.866,0,15deg) rotate(-1deg);
 $transform-3d-right: rotate3d(.5,-.866,0,15deg) rotate(1deg);

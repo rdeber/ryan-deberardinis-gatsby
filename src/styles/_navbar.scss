@@ -6,6 +6,9 @@
     z-index: 9999;
     border-top: 3px solid tint($primary-color, 20%);
     transition: .25s $ease-in;
+    background: transparent;
+    box-shadow: none;
+    will-change: background-color, box-shadow;
 
     @include md {
         border-top: 3px solid $primary-color;
@@ -68,9 +71,7 @@
         font-size: 1.25rem;
 
         @include md  {
-            font-size: .8rem;
-            margin-right: .2rem;
-            color: lighten($primary-color, 25%);
+            display: none;
         }
     }
 

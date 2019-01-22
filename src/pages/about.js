@@ -16,10 +16,30 @@ const AboutPage = (props) => (
         </div>
         <div className="pageCoverInfo box-3d-right">
           <div className="pageCoverTitle">
-            <h1 className="myName">Hello, I'm Ryan.</h1>
-            <h2 className="mySkills">a creative professional from NYC</h2>
-            <p>My work focuses on the intersection between design and development. I have a relentless passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City.</p>
-            <p>I'm currently working as lead front end developer for Remote-Learner in NYC</p>
+            <h1>Hello.</h1>
+            <h2>I'm a creative professional from New York City</h2>
+            <p>My work focuses on the intersection between design and development. I have a passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City. I'm currently working as lead front end developer for Remote-Learner.</p>
+          </div>
+        </div>
+        <div className="my-skills">
+          <h4>My skills:</h4>
+          <div className="skills-wrap">
+            <span className="label label-rounded label-primary">HTML</span>
+            <span className="label label-rounded label-primary">CSS</span>
+            <span className="label label-rounded label-primary">SCSS/LESS</span>
+            <span className="label label-rounded label-primary">UI/UX</span>
+            <span className="label label-rounded label-primary">JavaScript</span>
+            <span className="label label-rounded label-primary">jQuery</span>
+            <span className="label label-rounded label-primary">Git</span>
+            <span className="label label-rounded label-primary">Bootstrap</span>
+            <span className="label label-rounded label-primary">Wordpress</span>
+            <span className="label label-rounded label-primary">Gulp/Grunt</span>
+            <span className="label label-rounded label-primary">Nodejs/NPM</span>
+            <span className="label label-rounded label-primary">React</span>
+            <span className="label label-rounded label-primary">PHP</span>
+            <span className="label label-rounded label-primary">Moodle</span>
+            <span className="label label-rounded label-primary">Photoshop</span>
+            <span className="label label-rounded label-primary">Illustrator</span>
           </div>
         </div>
       </section>

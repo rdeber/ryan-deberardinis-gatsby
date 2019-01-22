@@ -13,19 +13,16 @@
     height: 100%;
     position: relative;
     transition: filter 0.25s $ease-in;
-    transform: scale(1.05);
+    //transform: scale(1.05);
 
     @include sm {
         width: calc(100%/2);
-        height: calc(100%/2);
     }
     @include md {
         width: calc(100%/3);
-        height: calc(100%/3);
     }
     @include lg {
         width: calc(100%/4);
-        height: calc(100%/4);
     }
 
     h5 {

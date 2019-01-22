@@ -9,9 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     @include lg {
-        justify-content: flex-end;
+        flex-direction: row;
     }
 }
 
@@ -31,11 +32,13 @@
 
 .pageCoverInfo {
     z-index: 1;
-    margin: 1rem 0 0;
+    margin: 6rem 0 2rem;
+    order: 1;
 
     @include lg {
+        margin: 1rem 0 0;
         max-width: 33rem;
-        margin: 2rem 6rem 0 0;
+        order: 2;
     }
 }
 
@@ -46,21 +49,73 @@
     border-radius: 13px;
 
     h1 {
-        font-size: 1.9rem;
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: -1.5px;
+        margin: 0;
+        line-height: .8;
 
-        @include md {
+        @include lg {
             font-size: 3rem;
+        }
+    }
+
+    h2 {
+        font-size: 1.05rem;
+
+        @include lg {
+            font-size: 1.2rem;
         }
     }
 
     p {
         font-size: .9rem;
 
-        @include md {
+        @include lg {
             font-size: 1rem;
         }
     }
 }
+
+.my-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    z-index: 1;
+    order: 2;
+
+    @include lg {
+        margin-bottom: 0;
+        order: 1;
+    }
+
+    h4 {
+        font-size: 1rem;
+        
+        @include lg {
+            font-size: 1.75rem;
+        }
+    }
+}
+
+.skills-wrap {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    flex-wrap: wrap;
+       
+    .label {
+        margin: .2rem;
+
+        &:hover {
+            background: tint($primary-color, 10%);
+        }
+    }
+}
+
+
 
 .about section:not(.pageCover) {
     display: flex;
@@ -70,30 +125,16 @@
     margin: 0 -.4rem 3rem;
     position: relative;
     background: #fff;
+    text-align: center;
 }
 
 .about section.skills {
     background: $primary-color;
     padding: 2rem 0 3rem;
+    z-index: 1;
 
     h4 {
         color: rgba(255,255,255,.9);
-    }
-}
-.skills-wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 600px;
-
-    .label {
-        margin: .2rem;
-        background: tint($primary-color, 20%);
-
-        &:hover {
-            background: tint($primary-color, 25%);
-        }
     }
 }
 

@@ -81,6 +81,14 @@ h4 {
             margin-bottom: 5rem;
         }
     }
+
+    h4 {
+        max-width: 500px;
+
+        @include md {
+            max-width: none;
+        }
+    }
 }
 
   ///////////////////////
@@ -180,6 +188,17 @@ h4 {
     @include lg {
         box-shadow: $shadow-3d-right;
         transform: $transform-3d-right-box;
+    }
+}
+.box-3d-left {
+    box-shadow: $shadow3;
+    border-radius: 9px;
+    will-change: transform;
+    transition: all .25s $ease-in;
+
+    @include lg {
+        box-shadow: $shadow-3d-left;
+        transform: $transform-3d-left-box;
     }
 }
 
