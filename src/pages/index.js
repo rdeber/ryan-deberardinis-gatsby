@@ -9,7 +9,7 @@ const IndexPage = () => (
     <SEO title="Ryan DeBerardinis" keywords={[`ryan`, `deberardinis`, `developer`, `designer`, `photographer`, `react`]} />
     <section className="home-banner">
       <div className="my-title">
-        <h1 className="my-name">RYAN DeBERARDINIS</h1>
+        <h1 className="my-name">RYAN <br/>DeBERARDINIS</h1>
         <h2 className="my-positions">Developer + Designer + Photographer</h2>
         <p className="my-description">I'm always interested in hearing about new projects. Drop me a line if you'd like to collaborate on something new.</p>
       </div>

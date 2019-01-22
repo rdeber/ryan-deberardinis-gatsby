@@ -9,14 +9,19 @@
     padding: 2.5rem 1rem;
     margin: 0 -.4rem;
 
+    @include md {
+        padding: 4rem 2rem 4rem;
+        flex-direction: row;
+    }
+
+    @include lg {
+        padding: 5rem 1rem 5rem;
+        flex-direction: row;
+    }
+
     > * {
         flex: 1;
         max-width: 500px;
-    }
-
-    @include md {
-        padding: 5rem 0 5rem;
-        flex-direction: row;
     }
 
     h2 {
@@ -89,6 +94,15 @@
 
         .device {
             margin-left: auto;
+        }
+
+        .btn {
+            background: #333542;
+
+            &:hover,
+            &:focus {
+                background: shade(#333542, 15%);
+            }
         }
     }
 }

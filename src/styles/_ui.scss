@@ -7,6 +7,16 @@ h4 {
     font-family: $font-family3;
 }
 
+.btn {
+    border: none;
+    height: auto;
+    padding: .5rem .75rem;
+    font-family: $font-family2;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: $shadow1;
+}
+
 .label,
 .label.label-rounded {
     padding: .2rem .5rem;
