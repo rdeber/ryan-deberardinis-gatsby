@@ -67,7 +67,7 @@ class Navbar extends React.Component {
         <div className="navbar-section">
           <nav className="navbar-links">
             <div className="external-links">
-              <a href="https://github.com/rdeber" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
+              <a href="https://github.com/rdeber/ryan-deberardinis-gatsby" className="tooltip tooltip-bottom" data-tooltip="View Source"><FaGithub /></a>
               <a href="https://codepen.io/rdeber/" className="tooltip tooltip-bottom" data-tooltip="Check out my Codepens"><FaCodepen /></a>
               <a href="https://www.instagram.com/r.deber/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FaInstagram /></a>
             </div>

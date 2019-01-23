@@ -44,7 +44,7 @@
     justify-content: space-evenly;
     width: 100%;
 
-    @include lg {
+    @include xl {
         justify-content: flex-start;
     }
 
@@ -54,7 +54,7 @@
         text-decoration: none;
 
         @include sm {
-            margin: 0 1rem;
+            margin: 0 .4rem;
             font-size: .75rem;
         }
 
@@ -63,6 +63,7 @@
         }
 
         @include xl {
+            margin: 0 1rem;
             font-size: 1rem;
         }
     }

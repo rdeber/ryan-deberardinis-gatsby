@@ -60,21 +60,27 @@
     justify-content: center;
     background: $primary-color;
     margin: 3rem -.4rem 0;
-    padding: 2rem 0 1.5rem;
+    padding: 3rem 0;
 
     .quote-wrap {
         max-width: 750px;
         text-align: center;
+        background: rgba(255,255,255,.1);
+        border-radius: 9px;
+        padding: 1rem 1rem 0;
+        box-shadow: $shadow2;
     }
 
     p {
         font-size: 1rem;
         color: rgba(255,255,255,.6);
         font-style: italic;
+        margin-bottom: .5rem;
     }
 
     p + p {
         font-size: .9rem;
         color: rgba(255,255,255,.4);
+        margin-bottom: 1rem;
     }
 }

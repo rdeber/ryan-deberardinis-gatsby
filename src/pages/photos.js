@@ -18,40 +18,40 @@ const PhotosPage = (props) => (
           <h4>My photos have been featured on:</h4>
           <div className="logos">
             <div className="logo">
-              <Img fluid={props.data.logo1.childImageSharp.fluid} />
+              <Img fluid={props.data.logo1.childImageSharp.fluid} alt="New York Post Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo2.childImageSharp.fluid} />
+              <Img fluid={props.data.logo2.childImageSharp.fluid} alt="Colorado Official Website Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo3.childImageSharp.fluid} />
+              <Img fluid={props.data.logo3.childImageSharp.fluid} alt="Frontier Airlines Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo4.childImageSharp.fluid} />
+              <Img fluid={props.data.logo4.childImageSharp.fluid} alt="Today Show Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo5.childImageSharp.fluid} />
+              <Img fluid={props.data.logo5.childImageSharp.fluid} alt="The Clymb Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo6.childImageSharp.fluid} />
+              <Img fluid={props.data.logo6.childImageSharp.fluid} alt="Denver Philharmonic Orchestra Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo7.childImageSharp.fluid} />
+              <Img fluid={props.data.logo7.childImageSharp.fluid} alt="AAA Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo8.childImageSharp.fluid} />
+              <Img fluid={props.data.logo8.childImageSharp.fluid} alt="The Huffington Post Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo9.childImageSharp.fluid} />
+              <Img fluid={props.data.logo9.childImageSharp.fluid} alt="Manhattan Institute Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo10.childImageSharp.fluid} />
+              <Img fluid={props.data.logo10.childImageSharp.fluid} alt="BBC News Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo11.childImageSharp.fluid} />
+              <Img fluid={props.data.logo11.childImageSharp.fluid} alt="Curbed New York Logo"/>
             </div>
             <div className="logo">
-              <Img fluid={props.data.logo12.childImageSharp.fluid} />
+              <Img fluid={props.data.logo12.childImageSharp.fluid} alt="Medium Logo"/>
             </div>
           </div>
         </div>
@@ -60,73 +60,73 @@ const PhotosPage = (props) => (
       <section className="photo-grid">
         <div className="photo">
           <h5>New York City</h5>
-          <Img fluid={props.data.photo1.childImageSharp.fluid} />
+          <Img fluid={props.data.photo1.childImageSharp.fluid} alt="Photo of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo2.childImageSharp.fluid} />
+          <Img fluid={props.data.photo2.childImageSharp.fluid} alt="Photo of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo3.childImageSharp.fluid} />
+          <Img fluid={props.data.photo3.childImageSharp.fluid} alt="Photo of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo4.childImageSharp.fluid} />
+          <Img fluid={props.data.photo4.childImageSharp.fluid} alt="Photo of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo5.childImageSharp.fluid} />
+          <Img fluid={props.data.photo5.childImageSharp.fluid} alt="Photo of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo6.childImageSharp.fluid} />
+          <Img fluid={props.data.photo6.childImageSharp.fluid} alt="Photo of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo7.childImageSharp.fluid} />
+          <Img fluid={props.data.photo7.childImageSharp.fluid} alt="Photo of a Big Red Tree"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo8.childImageSharp.fluid} />
+          <Img fluid={props.data.photo8.childImageSharp.fluid} alt="Photo of Redwood Forest Landscape"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo9.childImageSharp.fluid} />
+          <Img fluid={props.data.photo9.childImageSharp.fluid} alt="Photo of Denver Colorado Skyline and Lightning"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo10.childImageSharp.fluid} />
+          <Img fluid={props.data.photo10.childImageSharp.fluid} alt="Photo of Great Sand Dunes National Park Landscape"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo11.childImageSharp.fluid} />
+          <Img fluid={props.data.photo11.childImageSharp.fluid} alt="Photo of Thick Aspen Forest in Fall Landscape"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo12.childImageSharp.fluid} />
+          <Img fluid={props.data.photo12.childImageSharp.fluid} alt="Photo of Pink Blossoms in Central Park"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo13.childImageSharp.fluid} />
+          <Img fluid={props.data.photo13.childImageSharp.fluid} alt="Photo of Colorado Fall Landscape"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo14.childImageSharp.fluid} />
+          <Img fluid={props.data.photo14.childImageSharp.fluid} alt="Photo of Trains in Hudson Yards New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo15.childImageSharp.fluid} />
+          <Img fluid={props.data.photo15.childImageSharp.fluid} alt="Photo of Modern Subway Station Architecture in New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo16.childImageSharp.fluid} />
+          <Img fluid={props.data.photo16.childImageSharp.fluid} alt="Photo of Graffiti Covered Rooftops on Manhattan"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo17.childImageSharp.fluid} />
+          <Img fluid={props.data.photo17.childImageSharp.fluid} alt="Photo of Sunset Over the Hudson River"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo18.childImageSharp.fluid} />
+          <Img fluid={props.data.photo18.childImageSharp.fluid} alt="Photo of Old Buildings in the East Village of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo19.childImageSharp.fluid} />
+          <Img fluid={props.data.photo19.childImageSharp.fluid} alt="Photo of Historic Building New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo20.childImageSharp.fluid} />
+          <Img fluid={props.data.photo20.childImageSharp.fluid} alt="Photo of Yellowstone National Park Frozen Winter Landscape"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo21.childImageSharp.fluid} />
+          <Img fluid={props.data.photo21.childImageSharp.fluid} alt="Photo of Black and White Great Sand Dunes Landscape"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo22.childImageSharp.fluid} />
+          <Img fluid={props.data.photo22.childImageSharp.fluid} alt="Photo of Colorful Old Buildings of New York City"/>
         </div>
         <div className="photo">
-          <Img fluid={props.data.photo23.childImageSharp.fluid} />
+          <Img fluid={props.data.photo23.childImageSharp.fluid} alt="Photo of Staten Island Ferry and Docks"/>
         </div>
       </section>
 

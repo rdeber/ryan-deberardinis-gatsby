@@ -12,7 +12,7 @@ const AboutPage = (props) => (
     <div className="about">
       <section className="pageCover">
         <div className="pageCoverImg">
-          <Img fluid={props.data.map2.childImageSharp.fluid} alt="Ryan DeBerardinis self portrait" />
+          <Img fluid={props.data.map2.childImageSharp.fluid} alt="Map of New York City" />
         </div>
         <div className="pageCoverInfo box-3d-right">
           <div className="pageCoverTitle">
