@@ -93,7 +93,7 @@
 
     h4 {
         font-size: 1rem;
-        
+
         @include lg {
             font-size: 1.75rem;
         }
@@ -105,9 +105,13 @@
     justify-content: center;
     max-width: 600px;
     flex-wrap: wrap;
-       
+
     .label {
         margin: .2rem;
+        opacity: 0;
+        transition: all .25s $ease-in;
+        animation: fadeIn .3s $ease-in forwards;
+        @include increment-delay($type: animation, $offset: .1s, $count: 18);
 
         &:hover {
             background: tint($primary-color, 10%);
@@ -140,6 +144,6 @@
 
 .tech {
     .logos {
-        max-width: 600px; 
+        max-width: 600px;
     }
 }

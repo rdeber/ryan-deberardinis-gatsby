@@ -42,7 +42,8 @@
 	animation: blurFadeIn .5s .2s $ease-in forwards;
 }
 .banner h2,
-.home-banner h2 {
+.home-banner h2,
+.pageCoverInfo {
     backface-visibility: hidden;
     perspective: 1000;
     transform: translate3d(0,0,0);
@@ -51,7 +52,8 @@
 	animation: fadeIn 1s .8s $ease-in forwards;
 }
 .banner h4,
-.home-banner p {
+.home-banner p,
+.my-skills h4 {
     backface-visibility: hidden;
     perspective: 1000;
     transform: translate3d(0,0,0);

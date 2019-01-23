@@ -24,11 +24,9 @@ const Layout = ({ children }) => (
         <Background />
         <Header siteTitle={data.site.siteMetadata.title} />
         <Navbar />
-
         <div className="container wrap" role="main">
           {children}
         </div>
-
         <ScrollUp />
       </>
     )}

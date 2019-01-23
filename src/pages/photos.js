@@ -137,6 +137,8 @@ const PhotosPage = (props) => (
         </div>
       </section>
 
+      <footer><span>Ⓒ 2019</span> - RYAN DeBERARDINIS</footer>
+
     </div>
   </Layout>
 )

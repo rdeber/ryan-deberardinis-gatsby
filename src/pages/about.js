@@ -93,6 +93,9 @@ const AboutPage = (props) => (
           </div>
         </div>
       </section>
+
+      <footer><span>Ⓒ 2019</span> - RYAN DeBERARDINIS</footer>
+
     </div>
   </Layout>
 )
