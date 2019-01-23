@@ -52,3 +52,29 @@
         }
     }
 }
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color;
+    margin: 3rem -.4rem 0;
+    padding: 2rem 0 1.5rem;
+
+    .quote-wrap {
+        max-width: 750px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        color: rgba(255,255,255,.6);
+        font-style: italic;
+    }
+
+    p + p {
+        font-size: .9rem;
+        color: rgba(255,255,255,.4);
+    }
+}

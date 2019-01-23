@@ -25,15 +25,15 @@
         color: $primary-color;
         font-family: $font-family2;
         transition: all .25s $ease-in;
-        
+
         &:hover,
         &:focus {
             color: shade($primary-color, 20%);
-            text-decoration: none !important;                 
+            text-decoration: none !important;
         }
-        
+
         &.active {
-            transform: scale(1.2);        
+            transform: scale(1.2);
         }
     }
 }
@@ -127,7 +127,7 @@
     @include md {
         justify-content: flex-end;
     }
-    
+
     a {
         font-size: 1.25rem;
 
@@ -164,7 +164,8 @@
     background: shade($primary-color, 20%);
     box-shadow: $shadow1;
 
-    a {
+    a,
+    a:visited {
         color: rgba(255,255,255,.75);
 
         &:hover,

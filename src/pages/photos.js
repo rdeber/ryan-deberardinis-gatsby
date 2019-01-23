@@ -130,6 +130,13 @@ const PhotosPage = (props) => (
         </div>
       </section>
 
+      <section className="quote">
+        <div className="quote-wrap">
+          <p>"Our job is to record, each in his own way, this world of light and shadow and time that will never come again exactly as it is today."</p>
+          <p>-Edward Abbey</p>
+        </div>
+      </section>
+
     </div>
   </Layout>
 )
