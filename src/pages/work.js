@@ -15,52 +15,54 @@ const WorkPage = (props) => (
       <section className="banner">
         <h1>Creative Work</h1>
         <h2>Frontend Development + UI Design</h2>
-        <h4>I'm proud to have worked on some awesome projects:</h4>
-        <div className="logos">
-          <div className="logo">
-            <Img fluid={props.data.clientlogo1.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo2.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo3.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo4.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo5.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo6.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo7.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo8.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo9.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo10.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo11.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo12.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo13.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo14.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.clientlogo15.childImageSharp.fluid} />
+        <div className="logos-wrap">
+          <h4>I'm proud to have worked on some awesome projects:</h4>
+          <div className="logos">
+            <div className="logo">
+              <Img fluid={props.data.clientlogo1.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo2.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo3.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo4.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo5.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo6.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo7.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo8.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo9.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo10.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo11.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo12.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo13.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo14.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.clientlogo15.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
       </section>

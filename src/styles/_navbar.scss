@@ -54,7 +54,7 @@
         text-decoration: none;
 
         @include sm {
-            margin-right: 1rem;
+            margin: 0 1rem;
             font-size: .75rem;
         }
 
@@ -124,15 +124,15 @@
     justify-content: space-evenly;
     width: 100%;
 
-    a {
-        font-size: 1.25rem;
-    }
-
     @include md {
         justify-content: flex-end;
+    }
+    
+    a {
+        font-size: 1.25rem;
 
-        a {
-            margin-left: 1rem;
+        @include md {
+            margin: 0 1rem;
         }
     }
 

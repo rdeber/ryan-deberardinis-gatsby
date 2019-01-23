@@ -15,43 +15,45 @@ const PhotosPage = (props) => (
       <section className="banner">
         <h1>Photography</h1>
         <h2>Landscapes + Cityscapes + Abstract</h2>
-        <h4>My photos have been featured on:</h4>
-        <div className="logos">
-          <div className="logo">
-            <Img fluid={props.data.logo1.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo2.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo3.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo4.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo5.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo6.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo7.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo8.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo9.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo10.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo11.childImageSharp.fluid} />
-          </div>
-          <div className="logo">
-            <Img fluid={props.data.logo12.childImageSharp.fluid} />
+        <div className="logos-wrap">
+          <h4>My photos have been featured on:</h4>
+          <div className="logos">
+            <div className="logo">
+              <Img fluid={props.data.logo1.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo2.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo3.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo4.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo5.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo6.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo7.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo8.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo9.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo10.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo11.childImageSharp.fluid} />
+            </div>
+            <div className="logo">
+              <Img fluid={props.data.logo12.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
       </section>

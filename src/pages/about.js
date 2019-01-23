@@ -12,7 +12,7 @@ const AboutPage = (props) => (
     <div className="about">
       <section className="pageCover">
         <div className="pageCoverImg">
-          <Img fluid={props.data.map.childImageSharp.fluid} alt="Ryan DeBerardinis self portrait" />
+          <Img fluid={props.data.map2.childImageSharp.fluid} alt="Ryan DeBerardinis self portrait" />
         </div>
         <div className="pageCoverInfo box-3d-right">
           <div className="pageCoverTitle">
@@ -112,6 +112,16 @@ export const pageQuery = graphql`
       }
     }
     map: file(relativePath: { eq: "map.jpg" }) {
+      childImageSharp {
+        fluid(
+            maxWidth: 1920
+            duotone: { highlight: "#ffffff", shadow: "#3d4676", opacity: 100 }
+          ) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    map2: file(relativePath: { eq: "map2.jpg" }) {
       childImageSharp {
         fluid(
             maxWidth: 1920
