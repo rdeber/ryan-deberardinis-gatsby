@@ -1,5 +1,5 @@
 import React from 'react';
-import { Events, animateScroll as scroll, scroller } from 'react-scroll'
+import { Events, animateScroll as scroll } from 'react-scroll'
 import { FaRocket } from 'react-icons/fa'
 
 
@@ -25,6 +25,8 @@ class ScrollUp extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.toggleBodyClass);
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
   }
 
   toggleBodyClass = () => {
@@ -37,11 +39,6 @@ class ScrollUp extends React.Component {
 
   scrollToTop() {
     scroll.scrollToTop();
-  }
-
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
   }
 
   render() {

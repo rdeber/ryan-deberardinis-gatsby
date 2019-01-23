@@ -44,6 +44,20 @@
         max-width: 500px;
     }
 
+    p {
+        color: rgba(255,255,255,.75);
+    }
+
+    a:not(.btn) {
+        color: lighten($primary-color, 35%);
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+
     .device-wrap h4 {
         transform: rotate(0);
         top: -25px;
@@ -64,10 +78,6 @@
         @include md {
             transform: rotate(-13deg);
         }
-    }
-
-    p {
-        color: rgba(255,255,255,.7);
     }
 
     &:nth-child(even) {

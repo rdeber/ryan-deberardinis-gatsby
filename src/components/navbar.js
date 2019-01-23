@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 import React from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { FaUserNinja } from 'react-icons/fa'

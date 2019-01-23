@@ -89,10 +89,10 @@ const WorkPage = (props) => (
         </figure>
         <article>
           <h2>Remote-Learner.com</h2>
-          <h3>Development + UI Design</h3>
+          <h3>Development + UI Design + Branding</h3>
           <h4>HTML, CSS/SCSS, JavaScript, Wordpress</h4>
-          <p>Working with the creative team at Remote-Learner, I lead the front-end development and design of this complex project. The site is built on the Moodle LMS and utilizes the latest technologies for responsive web development.</p>
-          <a href="#" className="btn btn-primary">View Site</a>
+          <p>Working with the creative team at Remote-Learner, I lead the development and design of the company's new Wordpress website. Some of the unique elements included a custom built <a href="https://codepen.io/rdeber/pen/PdvMgd">animated SVG graphic</a> powered by Snap.svg and jQuery; and an <a href="https://codepen.io/rdeber/pen/jvodbO">interactive photo grid</a> built with Slick Carousel and qTip2.</p>
+          <a href="https://www.remote-learner.com/" className="btn btn-primary">View Site</a>
         </article>
       </section>
 
@@ -118,10 +118,10 @@ const WorkPage = (props) => (
         </figure>
         <article>
           <h2>Learning Spaces</h2>
-          <h3>Frontend Development + UI/UX Design</h3>
+          <h3>Frontend Development + UI Design</h3>
           <h4>HTML, CSS/LESS, JavaScript, Moodle</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Vestibulum finibus lacus mauris, eget cursus lectus gravida vel. Aenean hendrerit vulputate sem, eu semper mauris dignissim id. Fusce mollis et odio imperdiet ornare. Sed aliquam id eros vulputate accumsan. Maecenas et semper odio. Aliquam luctus finibus viverra. Quisque id interdum odio. Nullam pretium odio ante, et posuere turpis molestie eget. Donec non molestie nulla.</p>
-          <a href="#" className="btn btn-primary">View Site</a>
+          <p>This project involved a custom built theme for Moodle LMS. The Learning Spaces site featured an interactive grid of courses with a modern and intuitive UI inspired by Netflix's web interface.</p>
+          <a href="https://learningspaces.remote-learner.com/" className="btn btn-primary">View Site</a>
         </article>
       </section>
 
@@ -147,10 +147,10 @@ const WorkPage = (props) => (
         </figure>
         <article>
           <h2>Mandaloun Bistro</h2>
-          <h3>Frontend Development + Design</h3>
+          <h3>Website Design + Development</h3>
           <h4>HTML, CSS</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sapien eu dui dictum mattis. Vestibulum finibus lacus mauris, eget cursus lectus gravida vel. Aenean hendrerit vulputate sem, eu semper mauris dignissim id. Fusce mollis et odio imperdiet ornare. Sed aliquam id eros vulputate accumsan. Maecenas et semper odio. Aliquam luctus finibus viverra. Quisque id interdum odio. Nullam pretium odio ante, et posuere turpis molestie eget. Donec non molestie nulla.</p>
-          <a href="#" className="btn btn-primary">View Site</a>
+          <p>This project involved creating a custom website that captured the brand identity of this new restaurant and gave its customers an easy way to make reservations and explore the latest offerings. The website features a clean minimal style and utilizes a layout that highlights their powerful imagery.</p>
+          <a href="http://www.mandalounbistro.com/" className="btn btn-primary">View Site</a>
         </article>
       </section>
 
