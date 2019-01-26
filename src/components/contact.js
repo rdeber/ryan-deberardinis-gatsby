@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/contact.module.scss'
+import Fade from 'react-reveal/Fade';
 
 const Contact = () => (
   <div className="formWrap">
@@ -7,24 +8,26 @@ const Contact = () => (
     <form className={styles.myForm} action="https://formspree.io/rdeber@gmail.com" method="POST">
 
       <div className="form-group">
-        <span className="input input--manami">
-          <input className={`input__field input__field--manami`} type="text" id="name" required />
-          <label className={`input__label input__label--manami`} htmlFor="name">
-            <span className={`input__label-content input__label-content--manami`}>Name</span>
-          </label>
-        </span>
-        <span className="input input--manami">
-          <input className={`input__field input__field--manami`} type="text" id="email" required />
-          <label className={`input__label input__label--manami`} htmlFor="email">
-            <span className={`input__label-content input__label-content--manami`}>Email</span>
-          </label>
-        </span>
-        <span className="input input--manami">
-          <input className={`input__field input__field--manami`} type="text" id="phone" required />
-          <label className={`input__label input__label--manami`} htmlFor="phone">
-            <span className={`input__label-content input__label-content--manami`}>Phone</span>
-          </label>
-        </span>
+        <Fade cascade>
+          <span className="input input--manami">
+            <input className={`input__field input__field--manami`} type="text" id="name" required />
+            <label className={`input__label input__label--manami`} htmlFor="name">
+              <span className={`input__label-content input__label-content--manami`}>Name</span>
+            </label>
+          </span>
+          <span className="input input--manami">
+            <input className={`input__field input__field--manami`} type="text" id="email" required />
+            <label className={`input__label input__label--manami`} htmlFor="email">
+              <span className={`input__label-content input__label-content--manami`}>Email</span>
+            </label>
+          </span>
+          <span className="input input--manami">
+            <input className={`input__field input__field--manami`} type="text" id="phone" required />
+            <label className={`input__label input__label--manami`} htmlFor="phone">
+              <span className={`input__label-content input__label-content--manami`}>Phone</span>
+            </label>
+          </span>
+        </Fade>
       </div>
 
       <div className="form-group">

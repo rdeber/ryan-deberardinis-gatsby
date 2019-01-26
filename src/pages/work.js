@@ -4,7 +4,8 @@ import SEO from '../components/seo'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import { TiArrowBackOutline } from 'react-icons/ti'
-
+import Reveal from 'react-reveal/Reveal';
+import Fade from 'react-reveal/Fade';
 
 
 const WorkPage = (props) => (
@@ -69,88 +70,100 @@ const WorkPage = (props) => (
 
       <section className="project">
         <figure className="device-wrap">
-          <div className="device device-3d-left">
-            <div className="device-home"></div>
-            <div className="device-camera"></div>
-            <div className="browser-ui">
-              <div className="browser-ui-buttons">
-                <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>
+          <Reveal effect="fadeInLeft3d">
+            <div className="device device-3d-left">
+              <div className="device-home"></div>
+              <div className="device-camera"></div>
+              <div className="browser-ui">
+                <div className="browser-ui-buttons">
+                  <div className="browser-ui-button"></div>
+                  <div className="browser-ui-button"></div>
+                  <div className="browser-ui-button"></div>
+                </div>
+                <div className="browser-ui-search"></div>
+                <div className="browser-ui-close"></div>
               </div>
-              <div className="browser-ui-search"></div>
-              <div className="browser-ui-close"></div>
+              <div className="device-img">
+                <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+              </div>
             </div>
-            <div className="device-img">
-              <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-            </div>
-          </div>
+            </Reveal>
           <h4><TiArrowBackOutline /> Scroll Device to View</h4>
         </figure>
         <article>
-          <h2>Remote-Learner.com</h2>
-          <h3>Development + UI Design + Branding</h3>
-          <h4>HTML, CSS/SCSS, JavaScript, Wordpress</h4>
-          <p>Working with the creative team at Remote-Learner, I lead the development and design of the company's new Wordpress website. Some of the unique elements included a custom built <a href="https://codepen.io/rdeber/pen/PdvMgd">animated SVG graphic</a> powered by Snap.svg and jQuery; and an <a href="https://codepen.io/rdeber/pen/jvodbO">interactive photo grid</a> built with Slick Carousel and qTip2.</p>
-          <a href="https://www.remote-learner.com/" className="btn btn-primary">View Site</a>
+          <Fade cascade>
+            <h2>Remote-Learner.com</h2>
+            <h3>Development + UI Design + Branding</h3>
+            <h4>HTML, CSS/SCSS, JavaScript, Wordpress</h4>
+            <p>Working with the creative team at Remote-Learner, I lead the development and design of the company's new Wordpress website. Some of the unique elements included a custom built animated SVG graphic powered by Snap.svg and jQuery; and an interactive photo grid built with Slick Carousel and qTip2.</p>
+            <a href="https://www.remote-learner.com/" className="btn btn-primary">View Site</a>
+          </Fade>
         </article>
       </section>
 
       <section className="project">
         <figure className="device-wrap">
-          <div className="device device-3d-right">
-            <div className="device-home"></div>
-            <div className="device-camera"></div>
-            <div className="browser-ui">
-              <div className="browser-ui-buttons">
-                <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>
+          <Reveal effect="fadeInRight3d">
+            <div className="device device-3d-right">
+              <div className="device-home"></div>
+              <div className="device-camera"></div>
+              <div className="browser-ui">
+                <div className="browser-ui-buttons">
+                  <div className="browser-ui-button"></div>
+                  <div className="browser-ui-button"></div>
+                  <div className="browser-ui-button"></div>
+                </div>
+                <div className="browser-ui-search"></div>
+                <div className="browser-ui-close"></div>
               </div>
-              <div className="browser-ui-search"></div>
-              <div className="browser-ui-close"></div>
+              <div className="device-img">
+                <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+              </div>
             </div>
-            <div className="device-img">
-              <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
-            </div>
-          </div>
+          </Reveal>
           <h4><TiArrowBackOutline /> Scroll Device to View</h4>
         </figure>
         <article>
-          <h2>Learning Spaces</h2>
-          <h3>Frontend Development + UI Design</h3>
-          <h4>HTML, CSS/LESS, JavaScript, Moodle</h4>
-          <p>This project involved a custom built theme for Moodle LMS. The Learning Spaces site featured an interactive grid of courses with a modern and intuitive UI inspired by Netflix's web interface.</p>
-          <a href="https://learningspaces.remote-learner.com/" className="btn btn-primary">View Site</a>
+          <Fade cascade>
+            <h2>Learning Spaces</h2>
+            <h3>Frontend Development + UI Design</h3>
+            <h4>HTML, CSS/LESS, JavaScript, Moodle</h4>
+            <p>This project involved a custom built theme for Moodle LMS. The Learning Spaces site featured an interactive grid of courses with a modern and intuitive UI inspired by Netflix's web interface.</p>
+            <a href="https://learningspaces.remote-learner.com/" className="btn btn-primary">View Site</a>
+          </Fade>
         </article>
       </section>
 
       <section className="project">
         <figure className="device-wrap">
-          <div className="device device-3d-left">
-            <div className="device-home"></div>
-            <div className="device-camera"></div>
-            <div className="browser-ui">
-              <div className="browser-ui-buttons">
-                <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>
-                <div className="browser-ui-button"></div>
+          <Reveal effect="fadeInLeft3d">
+            <div className="device device-3d-left">
+              <div className="device-home"></div>
+              <div className="device-camera"></div>
+              <div className="browser-ui">
+                <div className="browser-ui-buttons">
+                  <div className="browser-ui-button"></div>
+                  <div className="browser-ui-button"></div>
+                  <div className="browser-ui-button"></div>
+                </div>
+                <div className="browser-ui-search"></div>
+                <div className="browser-ui-close"></div>
               </div>
-              <div className="browser-ui-search"></div>
-              <div className="browser-ui-close"></div>
+              <div className="device-img">
+                <Img fluid={props.data.imageFour.childImageSharp.fluid} />
+              </div>
             </div>
-            <div className="device-img">
-              <Img fluid={props.data.imageFour.childImageSharp.fluid} />
-            </div>
-          </div>
+          </Reveal>
           <h4><TiArrowBackOutline /> Scroll Device to View</h4>
         </figure>
         <article>
-          <h2>Mandaloun Bistro</h2>
-          <h3>Website Design + Development</h3>
-          <h4>HTML, CSS</h4>
-          <p>This project involved creating a custom website that captured the brand identity of this new restaurant and gave its customers an easy way to make reservations and explore the latest offerings. The website features a clean minimal style and utilizes a layout that highlights their powerful imagery.</p>
-          <a href="http://www.mandalounbistro.com/" className="btn btn-primary">View Site</a>
+          <Fade cascade>
+            <h2>Mandaloun Bistro</h2>
+            <h3>Website Design + Development</h3>
+            <h4>HTML, CSS</h4>
+            <p>This project involved creating a custom website that captured the brand identity of this new restaurant and gave its customers an easy way to make reservations and explore the latest offerings. The website features a clean minimal style and utilizes a layout that highlights their powerful imagery.</p>
+            <a href="http://www.mandalounbistro.com/" className="btn btn-primary">View Site</a>
+          </Fade>
         </article>
       </section>
 

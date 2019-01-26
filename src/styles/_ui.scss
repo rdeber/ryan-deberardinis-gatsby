@@ -217,7 +217,7 @@ a {
 
     @include lg {
         box-shadow: $shadow-3d-right;
-        transform: $transform-3d-right-box;
+        //transform: $transform-3d-right-box;
     }
 }
 .box-3d-left {

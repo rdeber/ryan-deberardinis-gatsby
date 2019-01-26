@@ -20,7 +20,7 @@
                 0 10px 20px rgba(0,0,0,.05),
                 $shadow-3d-left;
     @include md {
-        transform: $transform-3d-left;
+        //transform: $transform-3d-left;
     }
 }
 .device-3d-right {
@@ -28,7 +28,7 @@
                 0 10px 20px rgba(0,21,64,.05),
                 $shadow-3d-right;
     @include md {
-        transform: $transform-3d-right;
+        //transform: $transform-3d-right;
     }
 }
 
