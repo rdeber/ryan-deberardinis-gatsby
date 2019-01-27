@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Reveal from 'react-reveal/Reveal';
 
 
 const AboutPage = (props) => (
@@ -14,13 +15,15 @@ const AboutPage = (props) => (
         <div className="pageCoverImg">
           <Img fluid={props.data.map2.childImageSharp.fluid} alt="Map of New York City" />
         </div>
-        <div className="pageCoverInfo box-3d-right">
-          <div className="pageCoverTitle">
-            <h1>Hello.</h1>
-            <h2>I'm a creative professional from New York City</h2>
-            <p>My work focuses on the intersection between design and development. I have a passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City. I'm currently working as lead front end developer for Remote-Learner.</p>
+        <Reveal effect="fadeInRight3dBox">
+          <div className="pageCoverInfo box-3d-right">
+            <div className="pageCoverTitle">
+              <h1>Hello.</h1>
+              <h2>I'm a creative professional from New York City</h2>
+              <p>My work focuses on the intersection between design and development. I have a passion for creating clean and beautiful user experiences built on a solid understanding of the latest technologies. When I’m not writing code and pushing pixels, you can often find me photographing the streets of New York City. I'm currently working as lead front end developer for Remote-Learner.</p>
+            </div>
           </div>
-        </div>
+        </Reveal>
         <div className="my-skills">
           <h4>My skills:</h4>
           <div className="skills-wrap">
