@@ -72,11 +72,27 @@
 
 	to {
 		opacity: .99;
-		transform: $transform-3d-right-box
+		transform: $transform-3d-right-box;
 	}
 }
 .fadeInRight3dBox {
 	animation-name: fadeInRight3dBox;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInScrollText {
+	from {
+		opacity: .01;
+		transform: rotate(-90deg);
+	}
+
+	to {
+		opacity: .99;
+		transform: rotate(-90deg);
+	}
+}
+.fadeInScrollText {
+	animation-name: fadeInScrollText;
 	animation-fill-mode: forwards;
 }
 

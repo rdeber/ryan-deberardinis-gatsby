@@ -64,7 +64,8 @@
         order: 1;
 
         @include md {
-            transform: rotate(-90deg);
+            opacity: .01;
+            //transform: rotate(-90deg);
             position: absolute;
             left: -125px;
             top: 50%;

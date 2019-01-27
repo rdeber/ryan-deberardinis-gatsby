@@ -87,8 +87,10 @@ const WorkPage = (props) => (
                 <Img fluid={props.data.imageOne.childImageSharp.fluid} />
               </div>
             </div>
-            </Reveal>
-          <h4><TiArrowBackOutline /> Scroll Device to View</h4>
+          </Reveal>
+          <Reveal effect="fadeInScrollText">
+            <h4><TiArrowBackOutline /> Scroll Device to View</h4>
+          </Reveal>
         </figure>
         <article>
           <Fade cascade>
@@ -121,7 +123,9 @@ const WorkPage = (props) => (
               </div>
             </div>
           </Reveal>
-          <h4><TiArrowBackOutline /> Scroll Device to View</h4>
+          <Reveal effect="fadeInScrollText">
+            <h4><TiArrowBackOutline /> Scroll Device to View</h4>
+          </Reveal>
         </figure>
         <article>
           <Fade cascade>
@@ -154,7 +158,9 @@ const WorkPage = (props) => (
               </div>
             </div>
           </Reveal>
-          <h4><TiArrowBackOutline /> Scroll Device to View</h4>
+          <Reveal effect="fadeInScrollText">
+            <h4><TiArrowBackOutline /> Scroll Device to View</h4>
+          </Reveal>
         </figure>
         <article>
           <Fade cascade>
