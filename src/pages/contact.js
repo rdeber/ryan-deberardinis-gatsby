@@ -19,10 +19,18 @@ const ContactPage = () => (
           <h1 className="my-name">Get in Touch.</h1>
           <h2 className="my-positions">I'm always interested in hearing about new projects. Drop me a line if you'd like to collaborate on something new.</h2>
           <div className="external-links">
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 0cd700fd526faae76e4cf0814df26be2e71b14b7
               <Fade delay={1000}><a href="https://github.com/rdeber" className="tooltip tooltip-bottom" data-tooltip="View source on Github"><FiGithub /></a></Fade>
               <Fade delay={1200}><a href="https://codepen.io/rdeber/" className="tooltip tooltip-bottom" data-tooltip="Check out my Codepens"><FiCodepen /></a></Fade>
               <Fade delay={1400}><a href="https://www.instagram.com/r.deber/" className="tooltip tooltip-bottom" data-tooltip="Follow me on Instagram"><FiInstagram /></a></Fade>
               <Fade delay={1600}><a href="https://www.shutterstock.com/g/deberarr" className="tooltip tooltip-bottom" data-tooltip="View my photos on Shutterstock"><FiImage /></a></Fade>
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 0cd700fd526faae76e4cf0814df26be2e71b14b7
           </div>
         </div>
         <Reveal effect="fadeInRight3dBox">
