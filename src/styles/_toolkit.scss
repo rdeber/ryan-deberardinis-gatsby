@@ -99,6 +99,7 @@ $secondary-color:  #e85b6f;
 $tertiary-color:     shade($primary-color, 20%);
 $header-color:       $tertiary-color;
 $text-color:       #7F7B91;
+$text-color-light: rgba(255,255,255,.75);
 
 // Fonts
 $font-family1: 'Open Sans', sans-serif;

@@ -144,17 +144,132 @@
     text-align: center;
 }
 
-.about section.skills {
+@keyframes dash {
+    0% {
+        stroke: rgba(255,255,255,.75);
+        stroke-dashoffset: 2000;
+        fill: rgba(255,255,255,0);
+    }
+    75% {
+        stroke: rgba(255,255,255,.75);
+        fill: rgba(255,255,255,0);
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke: rgba(255,255,255,0);
+        fill: tint($primary-color, 10%);
+    }
+}
+
+.about section.thingsido {
     background: $primary-color;
-    padding: 2rem 0 3rem;
+    color: $text-color-light;
     z-index: 1;
 
-    h4 {
+    svg {
+        font-size: 4rem;
+        margin-right: 1rem;
+        stroke-width: 10px;
+        stroke-linecap: round;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+    }
+
+    .reveal-dash svg {
+        animation: dash 4s linear forwards;
+    }
+
+    span {
+        text-align: left;
+    }
+
+    h1 {
+        color: rgba(255,255,255,.8);
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: .75rem 0;
+        
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            max-width: 100px;
+            height: 1px;
+            margin: 0 .75rem;
+            background: tint($primary-color, 50%);
+        }
+    }
+
+    h2 {
         color: rgba(255,255,255,.9);
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: .1rem;
+    }
+
+    .columns {
+        flex-direction: column;
+
+        @include xl {
+            flex-direction: row;
+        }
+    }
+
+    .column {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        width: 100%;
+
+        @include xl {
+            justify-content: center;
+            padding: 2rem;
+            width: 33%;
+        }
+
+        &:nth-of-type(1) {
+            background: shade($primary-color, 10%);
+        }
+
+        &:nth-of-type(2) {
+            background: shade($primary-color, 17%);
+        }
+
+        &:nth-of-type(3) {
+            background: shade($primary-color, 24%);
+        }
     }
 }
 
 .tech {
+    h1 {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: .75rem 0;
+        
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            max-width: 100px;
+            height: 1px;
+            margin: 0 .75rem;
+            background: tint($primary-color, 50%);
+        }
+    }
     .logos {
         max-width: 600px;
     }
