@@ -130,7 +130,8 @@
 }
 
 .input--manami textarea {
-    min-height: 150px;
+	min-height: 150px;
+	box-shadow: none;
 
     & + label {
         min-height: 150px;
