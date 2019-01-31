@@ -1,11 +1,10 @@
 import React from 'react'
-import styles from '../styles/contact.module.scss'
 import Fade from 'react-reveal/Fade';
 
 const Contact = () => (
   <div className="formWrap">
 
-    <form className={styles.myForm} action="https://formspree.io/rdeber@gmail.com" method="POST">
+    <form className="myForm" action="https://formspree.io/rdeber@gmail.com" method="POST">
 
       <div className="form-group">
         <Fade cascade>
@@ -39,7 +38,7 @@ const Contact = () => (
         </span>
       </div>
 
-      <input type="text" name="_gotcha" className={styles.gotcha}></input>
+      <input type="text" name="_gotcha" className="gotcha"></input>
       <input type="hidden" name="_subject" value="Message via http://ryandeberardinis.com"></input>
       <input className="btn btn-primary" type="submit" value="Send"></input>
 

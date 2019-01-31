@@ -16,9 +16,7 @@ const IndexPage = () => (
       </div>
       <Reveal effect="fadeInRight3dBox">
         <div className="box-3d-right contact-form">
-          <div className="myForm">
-            <Contact />
-          </div>
+          <Contact />
         </div>
       </Reveal>
     </section>

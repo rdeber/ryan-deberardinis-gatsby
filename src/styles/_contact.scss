@@ -145,7 +145,21 @@
 .myForm {
     background: tint($primary-color, 95%);
     padding: 1rem;
-    border-radius: 8px;
+	border-radius: 8px;
+	
+    form {
+        margin-bottom: 0;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.gotcha {
+    display: none;
 }
 
 
