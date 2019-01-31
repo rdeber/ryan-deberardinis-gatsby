@@ -92,8 +92,10 @@
 	}
 }
 .fadeInScrollText {
-	animation-name: fadeInScrollText;
-	animation-fill-mode: forwards;
+	@include md {
+		animation-name: fadeInScrollText;
+		animation-fill-mode: forwards;
+	}
 }
 
 .banner h1,
