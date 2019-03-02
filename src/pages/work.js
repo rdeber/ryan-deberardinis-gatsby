@@ -93,11 +93,19 @@ const WorkPage = (props) => (
           </Reveal>
         </figure>
         <article>
-          <Fade cascade>
-            <h2>Remote-Learner.com</h2>
+          <Fade delay={200}>
+            <h2>Remote-Learner</h2>
+          </Fade>
+          <Fade delay={300}>
             <h3>Development + UI Design + Branding</h3>
+          </Fade>
+          <Fade delay={400}>
             <h4>HTML, CSS/SCSS, JavaScript, Wordpress</h4>
+          </Fade>
+          <Fade delay={500}>
             <p>Working with the creative team at Remote-Learner, I lead the development and design of the company's new Wordpress website. Some of the unique elements included a custom built animated SVG graphic powered by Snap.svg and jQuery; and an interactive photo grid built with Slick Carousel and qTip2.</p>
+          </Fade>
+          <Fade delay={600}>
             <a href="https://www.remote-learner.com/" className="btn btn-primary">View Site</a>
           </Fade>
         </article>
@@ -128,11 +136,19 @@ const WorkPage = (props) => (
           </Reveal>
         </figure>
         <article>
-          <Fade cascade>
+          <Fade delay={200}>
             <h2>Learning Spaces</h2>
+          </Fade>
+          <Fade delay={300}>
             <h3>Frontend Development + UI Design</h3>
-            <h4>HTML, CSS/LESS, JavaScript, Moodle</h4>
+          </Fade>
+          <Fade delay={400}>
+            <h4>HTML, CSS/LESS, JavaScript, Moodles</h4>
+          </Fade>
+          <Fade delay={500}>
             <p>This project involved a custom built theme for Moodle LMS. The Learning Spaces site featured an interactive grid of courses with a modern and intuitive UI inspired by Netflix's web interface.</p>
+          </Fade>
+          <Fade delay={600}>
             <a href="https://learningspaces.remote-learner.com/" className="btn btn-primary">View Site</a>
           </Fade>
         </article>
@@ -163,11 +179,19 @@ const WorkPage = (props) => (
           </Reveal>
         </figure>
         <article>
-          <Fade cascade>
+          <Fade delay={200}>
             <h2>Mandaloun Bistro</h2>
+          </Fade>
+          <Fade delay={300}>
             <h3>Website Design + Development</h3>
+          </Fade>
+          <Fade delay={400}>
             <h4>HTML, CSS</h4>
+          </Fade>
+          <Fade delay={500}>
             <p>This project involved creating a custom website that captured the brand identity of this new restaurant and gave its customers an easy way to make reservations and explore the latest offerings. The website features a clean minimal style and utilizes a layout that highlights their powerful imagery.</p>
+          </Fade>
+          <Fade delay={600}>
             <a href="http://www.mandalounbistro.com/" className="btn btn-primary">View Site</a>
           </Fade>
         </article>

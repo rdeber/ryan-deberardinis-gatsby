@@ -9,10 +9,6 @@
     padding: 2.5rem 1rem;
     margin: 0 -.4rem;
 
-    @include md {
-        padding: 4rem 2rem 4rem;
-        flex-direction: row;
-    }
 
     @include lg {
         padding: 5rem 1rem 5rem;
@@ -21,7 +17,16 @@
 
     > * {
         flex: 1;
-        max-width: 500px;
+    }
+
+    article {
+        max-width: 800px;
+        text-align: center;
+
+        @include lg {
+            max-width: 500px;
+            text-align: left;
+        }
     }
 
     h2 {
@@ -41,7 +46,6 @@
         font-weight: bold;
         font-size: .75rem;
         text-transform: uppercase;
-        max-width: 500px;
     }
 
     p {
@@ -63,7 +67,7 @@
         top: -25px;
         order: 1;
 
-        @include md {
+        @include lg {
             opacity: .01;
             //transform: rotate(-90deg);
             position: absolute;
@@ -76,7 +80,7 @@
         color: tint($primary-color, 20%);
         transform: rotate(-90deg);
 
-        @include md {
+        @include lg {
             transform: rotate(-13deg);
         }
     }
@@ -89,7 +93,7 @@
         background: $primary-color;
 
         figure {
-            @include md {
+            @include lg {
                 order: 2;
             }
         }
@@ -98,7 +102,7 @@
             left: auto;
             right: auto;
 
-            @include md {
+            @include lg {
                 right: -125px;
             }
         }

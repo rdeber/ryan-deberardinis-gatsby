@@ -92,7 +92,7 @@
 	}
 }
 .fadeInScrollText {
-	@include md {
+	@include lg {
 		animation-name: fadeInScrollText;
 		animation-fill-mode: forwards;
 	}
